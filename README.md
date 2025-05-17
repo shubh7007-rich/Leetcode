@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
+| [0213-house-robber-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0213-house-robber-ii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -15,4 +16,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0213-house-robber-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0213-house-robber-ii) |
 <!---LeetCode Topics End-->
