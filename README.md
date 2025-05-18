@@ -19,5 +19,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
 | [0213-house-robber-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0213-house-robber-ii) |
+## Math
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
