@@ -8,10 +8,9 @@ public:
 
         if(dp[r][c] != -1) return dp[r][c];
 
+        int yo = obs[r][c] + min(func(r+1 , c , n , m , obs) , func(r , c+1, n , m , obs));
 
-        int right = obs[r][c] + min(func(r+1 , c , n , m , obs) , func(r , c+1, n , m , obs));
-
-        return dp[r][c] = right;
+        return dp[r][c] = yo;
     }
     int minPathSum(vector<vector<int>>& grid) {
         int n = grid.size() , m = grid[0].size();
