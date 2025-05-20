@@ -4,10 +4,9 @@ public:
         vector<int> diff(n+1 , 0);
 
         for(int i = 0 ; i < mid ; i++){
-            vector<int> vec = q[i];
 
-            diff[vec[0]] += vec[2];
-            diff[vec[1] + 1] -= vec[2];
+            diff[q[i][0]] += q[i][2];
+            diff[q[i][1] + 1] -= q[i][2];
         }
 
         for(int i = 1 ; i < n+1 ; i++){
