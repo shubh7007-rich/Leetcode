@@ -55,4 +55,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0127-word-ladder](https://github.com/shubh7007-rich/Leetcode/tree/master/0127-word-ladder) |
+## String
+|  |
+| ------- |
+| [0127-word-ladder](https://github.com/shubh7007-rich/Leetcode/tree/master/0127-word-ladder) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0127-word-ladder](https://github.com/shubh7007-rich/Leetcode/tree/master/0127-word-ladder) |
 <!---LeetCode Topics End-->
