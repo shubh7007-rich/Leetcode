@@ -1,22 +1,18 @@
 class Solution {
 public:
-    int dp[101][101];
-    int func(int i , int j , int m , int n){
-        if(i < 0 || i >= m || j < 0 || j >= n) return 0;
+    int uniquePaths(int n, int m) {
+        int dp[101][101];
 
-        if(i == m-1 && j == n-1) return 1;
+        for(int i = 0 ; i < m ; i++) dp[0][i] = 1;
+        for(int i = 0 ; i < n ; i++) dp[i][0] = 1;
 
-        if(dp[i][j] != -1) return dp[i][j];
 
-        int right = func(i , j+1 , m , n);
-        int down = func(i+1 , j , m , n);
+        for(int i = 1 ; i < n ; i++){
+            for(int j = 1 ; j < m ; j++){
+                dp[i][j] = dp[i-1][j] + dp[i][j-1];
+            }
+        }
 
-        return dp[i][j] = right + down;
-    }
-    int uniquePaths(int m, int n) {
-
-        memset(dp , -1 , sizeof(dp));
-
-        return func(0 , 0 , m , n);
+        return dp[n-1][m-1];
     }
 };
