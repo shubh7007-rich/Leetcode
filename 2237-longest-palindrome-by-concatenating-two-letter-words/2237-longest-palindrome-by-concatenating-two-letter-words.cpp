@@ -7,7 +7,7 @@ public:
             mp[str]++;
         }
 
-        int cnt = 0 , flag = 0 , maxi = 0;
+        int cnt = 0 , flag = 0 ;
 
         auto it = mp.begin();
 
@@ -18,8 +18,6 @@ public:
             reverse(temp.begin() , temp.end());
 
             if(str[0] == str[1]){
-                maxi = max(maxi , 2*mp[str]);
-
                 cnt += (freq - (freq%2)) * 2;
 
                 if(freq%2) flag = 1;
@@ -39,6 +37,6 @@ public:
 
         if(flag) cnt += 2;
 
-        return (cnt > maxi) ? cnt : maxi;
+        return cnt;
     }
 };
