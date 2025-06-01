@@ -6,20 +6,20 @@ public:
         for(int i = max(0 , n-2*limit) ; i <= min(n , limit) ; i++){
             if(n-i > 2*limit) continue;
 
-            int l = 0 , r = limit , ans = -1;
-            while(l <= r){
-                int mid = (l + r)/2;
+            // int l = 0 , r = limit , ans = -1;
+            // while(l <= r){
+            //     int mid = (l + r)/2;
 
-                if(n-i-mid > limit){
-                    l = mid + 1;
-                }else{
-                    ans = mid;
-                    r = mid - 1;
-                }
-            }
-            if(ans == -1) continue;
+            //     if(n-i-mid > limit){
+            //         l = mid + 1;
+            //     }else{
+            //         ans = mid;
+            //         r = mid - 1;
+            //     }
+            // }
+            // if(ans == -1) continue;
 
-            // int ans = min(limit , n-i) - i;
+            int ans = max(0 , n-i-limit);
             
             cnt += min(limit , n-i) - ans + 1;
             
