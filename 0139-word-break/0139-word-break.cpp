@@ -21,7 +21,7 @@ public:
             for(int end = start ; end < s.length() ; end++){
 
                 if(vis[end]) continue;
-                
+
                 if(st.find(s.substr(start , end - start + 1)) != st.end()){
                     que.push(end+1);
                     vis[end] = 1;
