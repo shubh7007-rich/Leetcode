@@ -4,15 +4,22 @@ public:
         int n = boxes.size();
         vector<int> ans(n , 0);
 
-        for(int i = 0 ; i < n; i++){
-            int cnt = 0;
-            for(int j = 0 ; j < n ; j++){
+        vector<int> psum(n , 0) , ssum(n , 0);
+        int cnt = 0;
+        if(boxes[0] == '1') cnt++;
+        for(int i = 1 ; i < n; i++){
+            psum[i] = psum[i-1] + cnt;
+            if(boxes[i] == '1') cnt++;
+        }
+        cnt = 0;
+        if(boxes[n-1] == '1') cnt++;
+        for(int i = n-2 ; i >= 0; i--){
+            ssum[i] = ssum[i+1] + cnt;
+            if(boxes[i] == '1') cnt++;
+        }
 
-                if(boxes[j] == '1'){
-                    cnt += abs(j-i);
-                }
-            }
-            ans[i] = cnt;
+        for(int i = 0 ; i < n ; i++){
+            ans[i] = psum[i] + ssum[i];
         }
 
         return ans;
