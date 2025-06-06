@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## String
 |  |
 | ------- |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/shubh7007-rich/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Breadth-First Search
 |  |
@@ -133,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## Counting
 |  |
 | ------- |
@@ -166,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
+| [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## Merge Sort
 |  |
 | ------- |
@@ -215,4 +219,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 <!---LeetCode Topics End-->
