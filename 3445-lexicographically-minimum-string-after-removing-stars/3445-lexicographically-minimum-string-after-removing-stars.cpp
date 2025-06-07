@@ -10,18 +10,21 @@ public:
                 and a > b will be used to define a min-heap
         */
 
-        using pii = pair<int ,int>;
-        auto cmp = [](pii & a , pii & b){
-            if(a.first == b.first){
-                return a.second < b.second;    
-            }
+        // using pii = pair<int ,int>;
+        // auto cmp = [](pii & a , pii & b){
+        //     if(a.first == b.first){
+        //         return a.second < b.second;    
+        //     }
 
-            return a.first > b.first;
-        };
+        //     return a.first > b.first;
+        // };
 
         int n = s.length();    
 
-        priority_queue<pii , vector<pii> , decltype(cmp)> pq;
+        // priority_queue<pii , vector<pii> , decltype(cmp)> pq;
+
+        vector<vector<int>> ind(26 , vector<int>());
+        priority_queue<char , vector<char> , greater<char>> pq;
 
         vector<int> marked(n , 0);
 
@@ -33,10 +36,14 @@ public:
                     auto p = pq.top();
                     pq.pop();
 
-                    marked[p.second] = 1;
+                    int idx = ind[p-'a'].back();
+                    ind[p-'a'].pop_back();
+
+                    marked[idx] = 1;
                 }
             }else{
-                pq.push({s[i] , i});
+                pq.push(s[i]);
+                ind[s[i]-'a'].push_back(i);
             }
         }
         string str = "";
