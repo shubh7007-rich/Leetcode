@@ -1,8 +1,8 @@
 class Solution {
 public:
     void func(int num , int n , vector<int>& ans){
-        if(num > n) return;
-        
+        // if(num > n) return;
+
         ans.push_back(num);
 
         for(int i = 0 ; i <= 9 ; i++){
