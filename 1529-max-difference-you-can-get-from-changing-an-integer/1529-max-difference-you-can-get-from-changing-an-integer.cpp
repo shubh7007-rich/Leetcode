@@ -18,12 +18,12 @@ public:
         for(int i = 0 ; i < n ; i++){
             int dig = arr[i];
 
-            if(processed[dig]) continue;
+            // if(processed[dig]) continue;
 
             for(int j = 0 ; j < 10 ; j++){
                 int gen = 0;
                 if(arr[0] == dig && j == 0) continue;
-                
+
                 for(int k = 0 ; k < n ; k++){
                     if(arr[k] == dig){
                         
