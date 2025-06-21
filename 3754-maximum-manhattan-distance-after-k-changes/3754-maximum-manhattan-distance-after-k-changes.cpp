@@ -8,7 +8,7 @@ public:
         mp['N'] = 0;
         mp['S'] = 0;
         int i = 1;
-        for(char ch : s){
+        for(char & ch : s){
             mp[ch]++;
             // pair N S ko convert krde
             int n = mp['N'] , s = mp['S'] , e = mp['E'] , w = mp['W'];
