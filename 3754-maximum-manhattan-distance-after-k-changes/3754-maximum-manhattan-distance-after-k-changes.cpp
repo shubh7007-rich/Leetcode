@@ -1,17 +1,21 @@
 class Solution {
 public:
-    int maxDistance(string s, int k) {
-        unordered_map<char , int> mp;
-        int maxi = 0;
-        mp['E'] = 0;
-        mp['W'] = 0;
-        mp['N'] = 0;
-        mp['S'] = 0;
-        int i = 1;
-        for(char & ch : s){
-            mp[ch]++;
+    int maxDistance(string str, int k) {
+        // unordered_map<char , int> mp;
+        // int maxi = 0;
+        // mp['E'] = 0;
+        // mp['W'] = 0;
+        // mp['N'] = 0;
+        // mp['S'] = 0;
+        int n = 0 , s = 0 , e = 0 , w = 0;
+        int i = 1 , maxi = 0;
+        for(char & ch : str){
+            if(ch == 'N')n++;
+            if(ch == 'S')s++;
+            if(ch == 'E')e++;
+            if(ch == 'W')w++;
             // pair N S ko convert krde
-            int n = mp['N'] , s = mp['S'] , e = mp['E'] , w = mp['W'];
+            
             int c1 = min(n , s);
 
             int t1 = k - min(c1 , k);
