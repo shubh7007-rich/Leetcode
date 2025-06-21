@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maxDistance(string s, int k) {
-        map<char , int> mp;
+        unordered_map<char , int> mp;
         int maxi = 0;
         mp['E'] = 0;
         mp['W'] = 0;
