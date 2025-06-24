@@ -9,8 +9,10 @@ public:
             int j = i + 3 - 1;
 
             if(nums[j] <= nums[i] + k){
-                vector<int> temp(nums.begin() + i , nums.begin() + j + 1);
-                ans.push_back(temp);
+                // vector<int> temp(nums.begin() + i , nums.begin() + j + 1);
+                // ans.push_back(temp);
+
+                ans.push_back({nums[i] , nums[i+1] , nums[i+2]});
                 i = j+1;
             }else{
                 break;
