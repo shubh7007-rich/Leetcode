@@ -25,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/shubh7007-rich/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3639-zero-array-transformation-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
 ## Two Pointers
@@ -39,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 ## Dynamic Programming
 |  |
@@ -149,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 ## Counting
