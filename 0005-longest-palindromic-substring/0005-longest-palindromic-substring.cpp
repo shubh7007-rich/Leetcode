@@ -5,32 +5,34 @@ public:
         int n = s.length(), maxi = 0;
         string ans = "";
         for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
-                // string str = s.substr(i , j-i+1);
+           
+           // odd 
+           int l = i , r = i;
 
-                // if(isPalindrome(str)){
-                //     if(str.length() > maxi){
-                //         maxi = str.length();
-                //         ans = str;
-                //     }
-                // }
-                int l = i, r = j;
-                bool p = true;
+           while(l >= 0 && r < n){
+                if(s[l] != s[r]) break;
+                l--;
+                r++;
+           }
+           l++;r--;
+           if(r-l+1 > maxi){
+                ans = s.substr(l , r-l+1);
+                maxi = r-l+1;
+           }
 
-                while (l <= r) {
-                    if (s[l] != s[r]){
-                        p = false;
-                        break;
-                    }
-                    l++;
-                    r--;
-                }
+           // even 
+           l = i , r = i+1;
 
-                if(p && (j-i+1 > maxi)){
-                    maxi = j-i+1;
-                    ans = s.substr(i , j-i+1);
-                }
-            }
+           while(l >= 0 && r < n){
+                if(s[l] != s[r]) break;
+                l--;
+                r++;
+           }
+           l++;r--;
+           if(r-l+1 > maxi){
+                ans = s.substr(l , r-l+1);
+                maxi = r-l+1;
+           }
         }
 
         return ans;
