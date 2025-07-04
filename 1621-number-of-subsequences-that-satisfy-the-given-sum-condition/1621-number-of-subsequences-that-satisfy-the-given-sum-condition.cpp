@@ -36,7 +36,7 @@ public:
             if( idx >= i ) cnt = (cnt + power[idx-i])%mod;
         }
 
-        for(ll & i : power) cout << i << " ";
+        // for(ll & i : power) cout << i << " ";
 
         return cnt;
     }
