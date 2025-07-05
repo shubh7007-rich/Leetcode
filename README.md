@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1032-satisfiability-of-equality-equations](https://github.com/shubh7007-rich/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1073-number-of-enclaves](https://github.com/shubh7007-rich/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/shubh7007-rich/Leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0070-climbing-stairs) |
 | [0795-k-th-symbol-in-grammar](https://github.com/shubh7007-rich/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
+| [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [3199-distribute-candies-among-children-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3199-distribute-candies-among-children-i) |
 | [3201-distribute-candies-among-children-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3201-distribute-candies-among-children-ii) |
@@ -95,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
+| [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/shubh7007-rich/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [3639-zero-array-transformation-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
@@ -115,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/shubh7007-rich/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
+| [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/shubh7007-rich/Leetcode/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
@@ -280,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/shubh7007-rich/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
+| [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 ## Bit Manipulation
 |  |
 | ------- |
