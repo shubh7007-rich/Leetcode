@@ -209,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/shubh7007-rich/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/shubh7007-rich/Leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
+| [3916-minimum-time-to-reach-destination-in-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/3916-minimum-time-to-reach-destination-in-directed-graph) |
 ## Topological Sort
 |  |
 | ------- |
@@ -230,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+| [3916-minimum-time-to-reach-destination-in-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/3916-minimum-time-to-reach-destination-in-directed-graph) |
 ## Merge Sort
 |  |
 | ------- |
@@ -315,4 +317,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
+## Shortest Path
+|  |
+| ------- |
+| [3916-minimum-time-to-reach-destination-in-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/3916-minimum-time-to-reach-destination-in-directed-graph) |
 <!---LeetCode Topics End-->
