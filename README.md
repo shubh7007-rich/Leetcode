@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/shubh7007-rich/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/shubh7007-rich/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3639-zero-array-transformation-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/shubh7007-rich/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/shubh7007-rich/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Sorting
 |  |
@@ -59,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/shubh7007-rich/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 ## Dynamic Programming
@@ -190,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2497-maximum-matching-of-players-with-trainers](https://github.com/shubh7007-rich/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
