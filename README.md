@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0795-k-th-symbol-in-grammar](https://github.com/shubh7007-rich/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
+| [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [3199-distribute-candies-among-children-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3199-distribute-candies-among-children-i) |
 | [3201-distribute-candies-among-children-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3201-distribute-candies-among-children-ii) |
@@ -330,4 +331,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3916-minimum-time-to-reach-destination-in-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/3916-minimum-time-to-reach-destination-in-directed-graph) |
+## Linked List
+|  |
+| ------- |
+| [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 <!---LeetCode Topics End-->
