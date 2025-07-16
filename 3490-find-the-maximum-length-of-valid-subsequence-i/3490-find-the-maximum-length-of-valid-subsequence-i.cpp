@@ -1,37 +1,67 @@
 class Solution {
 public:
-    int solve(vector<vector<vector<int>>> &dp , vector<int> &nums , int parity , int prev , int ind)
-{
-    if(ind==nums.size())
-    {
-        return 0;
-    }
-    if(dp[parity+1][prev+1][ind]!=-1)
-    {
-        return dp[parity+1][prev+1][ind];
-    }
-    int ans= 0;
-    if(parity==-1  &&  prev==-1)
-    {
-        ans = 1 + solve(dp , nums , -1 , nums[ind] , ind+1);
-    }
-    else if(parity==-1  &&  prev!=-1)
-    {
-        ans = 1 + solve(dp , nums , (nums[ind] + prev)%2 , nums[ind] , ind+1);
-    }
-    else if(parity!=-1  &&  (nums[ind] + prev)%2==parity)
-    {
-        ans = 1 + solve(dp , nums , parity , nums[ind] , ind+1);
-    }
-    return dp[parity+1][prev+1][ind] = max(ans , solve(dp , nums , parity , prev , ind+1));
-}
+    int maximumLength(vector<int>& nums) {
+        /* % 2 so we can get either 0 or 1 
+         0 ---> our sum every two elements needs to be even -->
+                so for this case , we need all odd or all even
+         1 --> our sum needs to be odd -->
+                so for this case , either even odd or odd even
 
-int maximumLength(vector<int>& nums) {
-    for(int i=0; i<nums.size(); i++)
-    {
-        nums[i] %= 2;
+         */
+
+        int l1 = 0 , l2 = 0 , l3 = 0 , l4 = 0;
+
+        // all odds
+
+        for(int & i : nums){
+            if(i&1) l1++;
+        }
+
+        // all even
+        for(int & i : nums){
+            if(!(i&1)) l2++;
+        }
+
+        // even odd
+        bool flag = true;
+
+        for(int & i : nums){
+            if(flag){  // even
+                if(!(i&1)){
+                    l3++;
+                    flag = !flag;
+                }
+                
+            }else{  // odd
+                if(i&1){
+                    l3++;
+                    flag = !flag;
+                }
+                
+            }
+        }
+
+        // odd even
+        flag = true;
+
+        for(int & i : nums){
+            if(flag){  // odd
+                if(i&1){
+                    l4++;
+                    flag = !flag;
+                }
+                
+            }else{  // even
+                if(!(i&1)){
+                    flag = !flag;
+                    l4++;
+                }
+                
+            }
+        }
+
+
+        return max({l1 , l2 , l3 , l4});
+
     }
-    vector<vector<vector<int>>> dp(3 , vector<vector<int>> (3 , vector<int> (nums.size() , -1)));
-    return solve(dp , nums , -1 , -1 , 0);
-}
 };
