@@ -1,14 +1,19 @@
 class Solution {
 public:
+    int dp[45];
+    int func(int i , int n){
+        if(i == n) return 1;
+
+        if(i > n ) return 0;
+
+        int s1 = 0 , s2;
+        s1 = func(i + 1 , n);
+        s2 = func(i+2 , n);
+
+        return s1 + s2;
+
+    }
     int climbStairs(int n) {
-        int dp[n];
-        if(n == 1) return 1;
-        dp[0] = 1; dp[1] = 2;
-
-        for(int i = 2 ; i < n ; i++){
-            dp[i] = dp[i-1] + dp[i-2];
-        }
-
-        return dp[n-1];
+        return func(0 , n);
     }
 };
