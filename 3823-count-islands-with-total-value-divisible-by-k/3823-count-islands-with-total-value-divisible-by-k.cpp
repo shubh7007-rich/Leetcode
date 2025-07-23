@@ -7,7 +7,7 @@ public:
         ll sum = grid[r][c];
         vis[r][c] = 1;
         
-        for(auto vec : directions){
+        for(auto & vec : directions){
             int r1 = r + vec[0] , c1 = c + vec[1];
 
             if(r1 >= 0 && r1 < n && c1 >= 0 && c1 < m && !vis[r1][c1] && grid[r1][c1] > 0){
