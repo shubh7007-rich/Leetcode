@@ -1,40 +1,42 @@
 class Solution {
 public:
-    void setZeroes(vector<vector<int>>& matrix) {
-        stack<pair<int , int>> st;
-        int n = matrix.size() , m = matrix[0].size();
+    void setZeroes(vector<vector<int>>& mat) {
+        queue<pair<int , int>> que;
+
+        int n = mat.size() , m = mat[0].size();
 
         for(int i = 0 ; i < n ; i++){
-            for(int j = 0 ;  j < m ; j++){
-                if(matrix[i][j] == 0){
-                    st.push({i , j});
+            for(int j = 0 ; j < m ; j++){
+                if(mat[i][j] == 0){
+                    que.push({i , j});
                 }
             }
         }
 
-        while(!st.empty()){
-            auto p = st.top();
-            st.pop();
+        while(!que.empty()){
+            auto p = que.front();
+            que.pop();
 
             int r = p.first , c = p.second;
 
-            for(int i = r-1 ; i >= 0 ; i--){
-                matrix[i][c] = 0;
-            }
+            int N = r-1 , S = r+1 , E = c + 1 , W = c - 1;
 
-            for(int i = c-1 ; i >= 0 ; i--){
-                matrix[r][i] = 0;
+            while(N >= 0){
+                mat[N][c] = 0;
+                N--;
             }
-
-            for(int i = r+1 ; i < n ; i++){
-                matrix[i][c] = 0;
+            while(S < n){
+                mat[S][c] = 0;
+                S++;
             }
-
-            for(int i = c+1 ; i < m ; i++){
-                matrix[r][i] = 0;
+            while(E < m){
+                mat[r][E] = 0;
+                E++;
+            }
+            while(W >= 0){
+                mat[r][W] = 0;
+                W--;
             }
         }
-
-        // return matrix;
     }
 };
