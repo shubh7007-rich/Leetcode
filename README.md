@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/shubh7007-rich/Leetcode/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
+| [3936-split-array-by-prime-indices](https://github.com/shubh7007-rich/Leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Two Pointers
 |  |
 | ------- |
@@ -110,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/shubh7007-rich/Leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
+| [3936-split-array-by-prime-indices](https://github.com/shubh7007-rich/Leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Combinatorics
 |  |
 | ------- |
@@ -374,4 +376,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
+## Number Theory
+|  |
+| ------- |
+| [3936-split-array-by-prime-indices](https://github.com/shubh7007-rich/Leetcode/tree/master/3936-split-array-by-prime-indices) |
 <!---LeetCode Topics End-->
