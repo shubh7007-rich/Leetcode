@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/shubh7007-rich/Leetcode/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
+| [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 ## Two Pointers
 |  |
 | ------- |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0240-search-a-2d-matrix-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [1073-number-of-enclaves](https://github.com/shubh7007-rich/Leetcode/tree/master/1073-number-of-enclaves) |
+| [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -194,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1492-time-needed-to-inform-all-employees](https://github.com/shubh7007-rich/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -204,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/shubh7007-rich/Leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 ## Union Find
 |  |
 | ------- |
@@ -211,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/shubh7007-rich/Leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1073-number-of-enclaves](https://github.com/shubh7007-rich/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/shubh7007-rich/Leetcode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+| [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 ## Greedy
 |  |
 | ------- |
