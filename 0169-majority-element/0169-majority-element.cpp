@@ -1,13 +1,22 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        map<int , int> mp;
-        for(int & i : nums) mp[i]++;
+        int ME = nums[0] , cnt = 1;
 
-        for(auto [nu , freq] : mp){
-            if(freq > nums.size()/2) return nu;
+        // boyer-moore voting algo
+
+        for(int i = 1 ; i < nums.size() ; i++){
+            if(cnt == 0){
+                ME = nums[i]; cnt = 1;
+            }else if(nums[i] == ME){
+                cnt++;
+            }else{
+                cnt--;
+            }
         }
 
-        return -1;
+        // as here majority element always exists , so we don't need to verify
+
+        return ME;
     }
 };
