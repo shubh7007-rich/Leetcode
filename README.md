@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shubh7007-rich/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0135-candy](https://github.com/shubh7007-rich/Leetcode/tree/master/0135-candy) |
 | [0139-word-break](https://github.com/shubh7007-rich/Leetcode/tree/master/0139-word-break) |
@@ -61,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/shubh7007-rich/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
@@ -72,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/shubh7007-rich/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0274-h-index](https://github.com/shubh7007-rich/Leetcode/tree/master/0274-h-index) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0502-ipo](https://github.com/shubh7007-rich/Leetcode/tree/master/0502-ipo) |
