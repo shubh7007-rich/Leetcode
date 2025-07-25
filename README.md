@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/shubh7007-rich/Leetcode/tree/master/0048-rotate-image) |
+| [0050-powx-n](https://github.com/shubh7007-rich/Leetcode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0070-climbing-stairs) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/shubh7007-rich/Leetcode/tree/master/0453-minimum-moves-to-equal-array-elements) |
@@ -379,6 +380,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/shubh7007-rich/Leetcode/tree/master/0050-powx-n) |
 | [0795-k-th-symbol-in-grammar](https://github.com/shubh7007-rich/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
