@@ -1,61 +1,57 @@
 class Solution {
 public:
     int cnt = 0;
-    
-    void merge(int l , int mid , int r , vector<int>& arr){
-        int i = l , j = mid+1;
-        
-        vector<int> temp;
 
-        while(i <= mid && j <= r){
-            if(arr[i] > 2 *(long long)arr[j]){
-                cnt += mid - i + 1;
-                j++;
+    void merge(int lb , int mid , int ub , vector<int>& nums){
+        int p1 = lb , p2 = mid + 1;
+
+        vector<int> copy;
+        int i = lb , e = mid + 1;
+        while(i <= mid && e <= ub){
+            if(nums[i] >   2 *(long)1* nums[e]){
+                cnt += (mid - i + 1);
+                e++;
             }else{
                 i++;
             }
         }
 
-        i = l ;
-        j = mid+1;
-        
-        while(i <= mid && j <= r){
-            
-            if(arr[i] <= arr[j]){
-                temp.push_back(arr[i]);
-                i++;
+        while(p1 <= mid && p2 <= ub){
+            if(nums[p1] <= nums[p2]){
+                copy.push_back(nums[p1]);
+                p1++;
             }else{
-                temp.push_back(arr[j]);
-                
-                j++;
+                copy.push_back(nums[p2]);
+                p2++;
             }
         }
-        
-        while(i <= mid){
-            temp.push_back(arr[i]);i++;
+
+        while(p1 <= mid){
+            copy.push_back(nums[p1]);
+            p1++;
         }
-        while(j <= r){
-            temp.push_back(arr[j]);
-            j++;
+        while(p2 <= ub){
+            copy.push_back(nums[p2]);
+            p2++;
         }
-        
-        for(int e = l ; e <= r ; e++){
-            arr[e] = temp[e-l];
+
+        for(int i = lb ; i <= ub ; i++){
+            nums[i] = copy[i - lb];
         }
     }
-    
-    void ms(int l , int r , vector<int> &arr){
-        if(l == r) return;
-        
-        int mid = (l + r)/2;
-        
-        ms(l , mid , arr);
-        ms(mid+1 , r , arr);
-        
-        merge(l , mid , r , arr);
+
+    void mergeS(int lb , int ub , vector<int>& nums){
+        if(lb < ub){
+            int mid = lb + (ub - lb)/2;
+
+            mergeS(lb , mid , nums);
+            mergeS(mid + 1 , ub , nums);
+            merge(lb , mid , ub , nums);
+        }
     }
     int reversePairs(vector<int>& nums) {
-        ms(0 , nums.size() - 1 , nums);
+        int lb = 0 , ub = nums.size() - 1;
+        mergeS(lb , ub , nums);
         return cnt;
     }
 };
