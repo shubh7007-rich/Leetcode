@@ -10,7 +10,7 @@ public:
         for(int & i : nums) st.insert(i);
 
         for(auto i : st){
-            if(st.find(i-1) == st.end()){
+            if(!st.count(i-1)){
                 int x = i+1;
 
                 while(st.count(x)){
