@@ -11,32 +11,35 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        int len = 0;
-        ListNode* p = head;
+        /* 
+            So basically what we can do here is we can take two pointers slow and fast .And then give   fast a head start of n and then move both the pointers one by one until fast->next == NULL . Slow will be behind the node that has to be deleted.
 
-        while(p != NULL){
-            len++;
-            p = p->next;
+            Proof - lets take length of the linked as 6 and n = 2, so now that mean we need to delete
+            5th node from the start , so slow needs to be on the 4th node. 
+
+
+            1stNode   2ndNode   3rdNode    4thNode     5thNode    6thNode
+    1st step                      fast
+    2nd step slow                 fast
+    3rd step                                slow                    fast
+
+        */
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        for(int i = 1; i <= n ; i++) fast = fast->next;
+
+        if(!fast) return head->next;
+
+        while(fast->next != NULL){
+            slow = slow->next;
+            fast = fast->next;
         }
 
-        int t = len - n;
-        ListNode* q = head;
-        ListNode* r = q->next;
 
-        if(t == 0){
-            head->next = NULL;
-            return r;
-        }
-
-        while(t > 1){
-            q = q->next;
-            r = r->next;
-            t--;
-        }
-
-        q->next = r->next;
-        r->next = NULL;
-
+        slow->next = slow->next->next;
+        
         return head;
     }
 };
