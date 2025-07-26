@@ -13,7 +13,7 @@ public:
             if(st.find(i-1) == st.end()){
                 int x = i+1;
 
-                while(st.find(x) != st.end()){
+                while(st.count(x)){
                     cnt++;
                     x = x + 1;
                 }
