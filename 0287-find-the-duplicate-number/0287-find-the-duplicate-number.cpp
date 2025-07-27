@@ -1,23 +1,40 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int slow = nums[nums[0]] , fast = nums[nums[nums[0]]];
+        /*
+        
+        [1 , 3 , 4 , 2 , 2]
 
-        while(slow != fast){
-            slow = nums[slow];
+        Approach 1 -> O(n*n)
 
-            fast = nums[nums[fast]];
+        Approach 2 -> O(n * logn)  -> when arr[i] == arr[i+1] then arr[i] will be duplicate
+
+        Approach 3 -> O(n) + O(n)
+
+        Approach 3 ->
+
+        [1 , n] --> and the size if n+1 , so all the numbers are valid index
+
+        i can perform a cyclic sort and if the nums[i] != i+1 then that number will be duplicate
+
+        */
+
+        int i = 0;
+        while(i < nums.size()){
+            int correct = nums[i] - 1;
+
+            if(nums[i] != nums[correct]){
+                swap(nums[i] , nums[correct]);
+            }else{
+                i++;
+            }
         }
 
-        slow = nums[0];
-
-        while(slow != fast){
-            slow = nums[slow];
-            fast = nums[fast];
+        for(int i = 0 ; i < nums.size() ; i++){
+            if(nums[i] != i+1) return nums[i];
         }
 
-
-        return fast;
+        return -1;
 
 
     }
