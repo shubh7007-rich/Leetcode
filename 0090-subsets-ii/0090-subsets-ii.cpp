@@ -19,7 +19,7 @@ public:
 
         func(0 , nums , temp , st);
 
-        vector<vector<int>> ans(st.begin() , st.end());
-        return ans;
+        // vector<vector<int>> ans(st.begin() , st.end());
+        return st;
     }
 };
