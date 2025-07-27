@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0001-two-sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0048-rotate-image](https://github.com/shubh7007-rich/Leetcode/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/shubh7007-rich/Leetcode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/shubh7007-rich/Leetcode/tree/master/0053-maximum-subarray) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/shubh7007-rich/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/shubh7007-rich/Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/shubh7007-rich/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/shubh7007-rich/Leetcode/tree/master/0141-linked-list-cycle) |
