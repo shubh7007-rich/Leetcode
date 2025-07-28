@@ -32,8 +32,9 @@ public:
             }
 
             if(pivot_Idx > k-1) R = pivot_Idx - 1;
+            else L = pivot_Idx + 1;
 
-            if(pivot_Idx < k-1) L = pivot_Idx + 1;
+            
         }
 
         return nums[pivot_Idx];
