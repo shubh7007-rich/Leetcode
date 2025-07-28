@@ -8,11 +8,10 @@ public:
         for(int & i : nums) maxOr |= i;
 
         for(int i = 0 ; i <= (1 << n) ; i++){
-            vector<int> subset;
+            
             int orr = 0;
             for(int j = 0 ; j < nums.size() ; j++){
                 if(i & (1 << j)){
-                    subset.push_back(nums[j]);
                     orr |= nums[j];
                 }
             }
