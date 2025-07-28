@@ -29,13 +29,15 @@ public:
         vector<string> temp;
         vector<vector<string>> ans;
 
-        for(int i = 0 ; i < n ; i++){
-            if(isPalindrome(0 , i , s)){
-                temp.push_back(s.substr(0 , i - 0 + 1));
-                func(i+1 , temp , ans , s , n);
-                temp.pop_back();
-            }
-        }
+        func(0 , temp , ans , s , n);
+
+        // for(int i = 0 ; i < n ; i++){
+        //     if(isPalindrome(0 , i , s)){
+        //         temp.push_back(s.substr(0 , i - 0 + 1));
+        //         func(i+1 , temp , ans , s , n);
+        //         temp.pop_back();
+        //     }
+        // }
 
         return ans;
     }
