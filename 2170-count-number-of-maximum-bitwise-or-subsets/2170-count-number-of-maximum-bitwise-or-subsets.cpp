@@ -1,26 +1,29 @@
 class Solution {
 public:
-    int countMaxOrSubsets(vector<int>& nums) {
-        // appraoch 1 - generate all subsets and check maximum
+    int cnt = 0 , maxi = 0;
 
-        int n = nums.size() ,maxOr = 0 , cnt = 0;
-
-        for(int & i : nums) maxOr |= i;
-
-        for(int i = 0 ; i < (1 << n) ; i++){
-            int orr = 0;
-            for(int j = 0 ; j < nums.size() ; j++){
-                if(i & (1 << j)){
-                    orr |= nums[j];
+    void func(int ind , int orr , vector<int>& nums){
+        if(ind >= nums.size()){
+            if(orr > maxi){
+                cnt = 1;
+                maxi = orr;
+            }else{
+                if(orr == maxi){
+                    cnt++;
                 }
             }
 
-            if(orr == maxOr) cnt++;
+            return;
         }
+        int temp = orr;
+        orr = orr | nums[ind];
+        func(ind + 1 , orr , nums);
+        func(ind + 1 , temp , nums);
+    }
 
+    int countMaxOrSubsets(vector<int>& nums) {
+        int orr = 0;
+        func(0 ,orr , nums);
         return cnt;
-
-
-        // approach 2 - recursion , T.C - 2^n
     }
 };
