@@ -1,29 +1,19 @@
 class Solution {
 public:
-    int cnt = 0 , maxi = 0;
+    int cnt = 0 ;
 
-    void func(int ind , int orr , vector<int>& nums){
+    int func(int ind , int orr , vector<int>& nums , int maxOr){
         if(ind >= nums.size()){
-            if(orr > maxi){
-                cnt = 1;
-                maxi = orr;
-            }else{
-                if(orr == maxi){
-                    cnt++;
-                }
-            }
-
-            return;
+            return (orr == maxOr) ? 1 : 0;
         }
-        int temp = orr;
-        orr = orr | nums[ind];
-        func(ind + 1 , orr , nums);
-        func(ind + 1 , temp , nums);
+        return func(ind+1 , orr , nums , maxOr) + func(ind+1 , orr | nums[ind] ,nums, maxOr);
     }
 
     int countMaxOrSubsets(vector<int>& nums) {
-        int orr = 0;
-        func(0 ,orr , nums);
-        return cnt;
+        int orr = 0 , maxOr = 0;
+
+        for(int & i : nums) maxOr |= i;
+        
+        return func(0 ,orr , nums , maxOr); 
     }
 };
