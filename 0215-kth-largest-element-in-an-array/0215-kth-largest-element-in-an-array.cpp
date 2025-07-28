@@ -2,20 +2,20 @@ class Solution {
 public:
     int partition(int L , int R , vector<int>& nums){
         int i = L+1 , j = R;
-        int pivot = L;
+        int pivot = nums[L];
 
         while(i <= j){
-            if(nums[i] < nums[pivot] && nums[j] > nums[pivot]){
+            if(nums[i] < pivot && nums[j] > pivot){
                 swap(nums[i] , nums[j]);
                 i++;
                 j--;
             }
 
-            if(nums[i] >= nums[pivot]) i++;
-            if(nums[j] <= nums[pivot]) j--;
+            if(nums[i] >= pivot) i++;
+            if(nums[j] <= pivot) j--;
         }
 
-        swap(nums[pivot] , nums[j]);
+        swap(nums[L] , nums[j]);
 
         return j;
     }
