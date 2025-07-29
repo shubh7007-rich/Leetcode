@@ -39,10 +39,10 @@ public:
             lvl++;
         }
 
-        for(auto [line , mp2] : mp){
+        for(auto & [line , mp2] : mp){
             vector<int> temp;
-            for(auto [lvl , ms] : mp2){
-                for(auto num : ms){
+            for(auto & [lvl , ms] : mp2){
+                for(auto  num : ms){
                     temp.push_back(num);
                 }
             }
