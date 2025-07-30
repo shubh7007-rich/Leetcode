@@ -18,11 +18,7 @@ public:
 
         if(p->val != q->val) return false;
 
-        if(!solve(p->left , q->right)){
-            return false;
-        }
-
-        if(!solve(p->right , q->left)){
+        if(!solve(p->left , q->right) || !solve(p->right , q->left)){
             return false;
         }
 
