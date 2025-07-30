@@ -19,19 +19,22 @@ public:
         int lvl = 0;    
         while(!que.empty()){
             int size = que.size();
-            vector<int> temp;
-
+            vector<int> temp(size);
+            int i = 0;
+            if(lvl&1) i = size - 1;
             while(size--){
                 auto p = que.front();
                 que.pop();
-
-                temp.push_back(p->val);
+                temp[i] = p->val;
+                if(lvl&1){
+                    i--;
+                }else{
+                    i++;
+                }
 
                 if(p->left) que.push(p->left);
                 if(p->right) que.push(p->right);
-
             }
-            if(lvl&1) reverse(temp.begin() , temp.end());
             ans.push_back(temp);
 
             lvl++;
