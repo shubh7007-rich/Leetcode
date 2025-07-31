@@ -11,16 +11,44 @@
  */
 class Solution {
 public:
-    TreeNode* Prev = NULL;
+    // Approach 1 --> Recursion
+    // TreeNode* Prev = NULL;
+    // void flatten(TreeNode* root) {
+    //     if(root == NULL) return;
+
+    //     flatten(root->right);
+    //     flatten(root->left);
+
+    //     root->right = Prev;
+    //     root->left = NULL;
+
+    //     Prev = root;
+    // }
+    
+    // Approach 2 -> Using Stack
     void flatten(TreeNode* root) {
         if(root == NULL) return;
+        
+        stack<TreeNode*> st;
+        st.push(root);
 
-        flatten(root->right);
-        flatten(root->left);
+        while(!st.empty()){
+            TreeNode* curr = st.top();
+            st.pop();
 
-        root->right = Prev;
-        root->left = NULL;
+            if(curr->right){
+                st.push(curr->right);
+            }
 
-        Prev = root;
+            if(curr->left){
+                st.push(curr->left);
+            }
+
+            if(!st.empty()){
+                curr->right = st.top();
+            }
+
+            curr->left = NULL;
+        }
     }
 };
