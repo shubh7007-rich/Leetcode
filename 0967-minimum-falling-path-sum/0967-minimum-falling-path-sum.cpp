@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int inf = 1e9 , inf2 = 1e7;
+    int inf = 1e9 , inf2 = 1e5;
 
     vector<vector<int>> directions = {{1,-1} , {1,0} , {1,1}};
 
