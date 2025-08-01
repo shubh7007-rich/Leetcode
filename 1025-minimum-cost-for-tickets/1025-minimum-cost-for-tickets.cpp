@@ -13,9 +13,9 @@ public:
         if(dp[ind][day] != -1) return dp[ind][day];
 
         for(int i = 0 ; i < 3 ; i++){
-            int temp = days[ind] + t[i];
+            int temp = days[ind] + t[i] - 1;
             int j = ind + 1;
-            while(j < days.size() && temp > days[j]){
+            while(j < days.size() && temp >= days[j]){
                 j++;
             }
             cost = costs[i] + func(j , temp , days , costs);
