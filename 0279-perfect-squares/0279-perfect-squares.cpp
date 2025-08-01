@@ -9,7 +9,7 @@ public:
         if(dp[sum] != -1) return dp[sum];
 
         int count = 0 , minCount = INT_MAX;
-        for(int i = 1; i*i <= (n-sum) ; i++){
+        for(int i = 1; i*i <= (n) ; i++){
             int count = 1 + solve(sum + (i*i) , n);
 
             minCount = min(minCount , count);
