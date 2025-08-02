@@ -1,9 +1,11 @@
 class Solution {
 public:
     int inf = -1e7;
+
     int dp[600][101][101];
-    int func(int ind ,int c0 , int c1 ,vector<string>& strs, int m, int n , unordered_map<int , pair<int , int>>& mp){
-        if(ind >= strs.size()){
+
+    int func(int ind ,int c0 , int c1 ,int m, int n , unordered_map<int , pair<int , int>>& mp , int size){
+        if(ind >= size){
             return 0;
         }
 
@@ -13,16 +15,18 @@ public:
         
         int take = inf;
         if((c0 + zero <= m) && (c1 + one <= n)){
-            take = 1 + func(ind+1 , c0 + zero , c1 + one , strs , m , n , mp);
+            take = 1 + func(ind+1 , c0 + zero , c1 + one  , m , n , mp , size);
         }
 
-        int notTake = func(ind+1 , c0 , c1 , strs , m , n , mp);
+        int notTake = func(ind+1 , c0 , c1 , m , n , mp , size);
 
         return dp[ind][c0][c1] = max(take , notTake);
     }
     int findMaxForm(vector<string>& strs, int m, int n) {
         // preprocessing
          unordered_map<int , pair<int , int>> mp;
+
+         int size = strs.size();
 
          memset(dp , -1 , sizeof(dp));
 
@@ -38,6 +42,6 @@ public:
             mp[i] = {zero , one};
         }
 
-        return func(0 ,0 , 0 ,strs , m , n , mp);
+        return func(0 ,0 , 0 , m , n , mp , size);
     }
 };
