@@ -161,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
 | [0967-minimum-falling-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0972-knight-dialer](https://github.com/shubh7007-rich/Leetcode/tree/master/0972-knight-dialer) |
 | [1025-minimum-cost-for-tickets](https://github.com/shubh7007-rich/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1263-number-of-dice-rolls-with-target-sum) |
