@@ -1,7 +1,8 @@
 class Solution {
 public:
     // int dp[25][25][101];
-    map<tuple<int , int , int> , double> dp;
+    // map<tuple<int , int , int> , double> dp;
+    unordered_map<string , double> dp;
     vector<vector<int>> directions = {{-2,-1} , {-2,1} , {-1,-2} , {1,-2} , {2,-1} , {2,1} , {-1,2} , {1,2}};
     double func(int r , int c , int n , int k){
         if(r < 0 || r >= n || c < 0 || c >= n) return 0;
@@ -10,7 +11,8 @@ public:
 
         double prob = 0;
 
-        tuple<int , int , int> key = {r , c , k};
+        // tuple<int , int , int> key = {r , c , k};
+        string key = to_string(r) + "," + to_string(c) + "," + to_string(k) ;
 
         // if(dp[r][c][k] != -1) return dp[r][c][k];
         if(dp.count(key)) return dp[key];
