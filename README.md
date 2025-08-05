@@ -157,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0494-target-sum) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0650-2-keys-keyboard](https://github.com/shubh7007-rich/Leetcode/tree/master/0650-2-keys-keyboard) |
+| [0688-knight-probability-in-chessboard](https://github.com/shubh7007-rich/Leetcode/tree/master/0688-knight-probability-in-chessboard) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
