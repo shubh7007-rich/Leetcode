@@ -2,7 +2,7 @@ class Solution {
 public:
     // int dp[25][25][101];
     // map<tuple<int , int , int> , double> dp;
-    unordered_map<string , double> dp;
+    map<string , double> dp;
     vector<vector<int>> directions = {{-2,-1} , {-2,1} , {-1,-2} , {1,-2} , {2,-1} , {2,1} , {-1,2} , {1,2}};
     double func(int r , int c , int n , int k){
         if(r < 0 || r >= n || c < 0 || c >= n) return 0;
