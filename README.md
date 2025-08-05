@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0474-ones-and-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0474-ones-and-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0493-reverse-pairs) |
+| [0494-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0494-target-sum) |
 | [0502-ipo](https://github.com/shubh7007-rich/Leetcode/tree/master/0502-ipo) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
@@ -151,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/shubh7007-rich/Leetcode/tree/master/0322-coin-change) |
 | [0474-ones-and-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0474-ones-and-zeroes) |
+| [0494-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0494-target-sum) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0650-2-keys-keyboard](https://github.com/shubh7007-rich/Leetcode/tree/master/0650-2-keys-keyboard) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
@@ -496,6 +498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/shubh7007-rich/Leetcode/tree/master/0051-n-queens) |
 | [0090-subsets-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/shubh7007-rich/Leetcode/tree/master/0131-palindrome-partitioning) |
+| [0494-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0494-target-sum) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shubh7007-rich/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Sliding Window
 |  |
