@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0967-minimum-falling-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1025-minimum-cost-for-tickets](https://github.com/shubh7007-rich/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
+| [1263-number-of-dice-rolls-with-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
