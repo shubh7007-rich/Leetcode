@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
+| [0940-fruit-into-baskets](https://github.com/shubh7007-rich/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0967-minimum-falling-path-sum) |
@@ -255,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
+| [0940-fruit-into-baskets](https://github.com/shubh7007-rich/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -510,6 +512,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/shubh7007-rich/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
+| [0940-fruit-into-baskets](https://github.com/shubh7007-rich/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1813-maximum-erasure-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1813-maximum-erasure-value) |
