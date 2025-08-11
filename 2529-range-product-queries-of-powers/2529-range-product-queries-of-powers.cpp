@@ -4,15 +4,23 @@ public:
     int mod = 1e9 + 7;
     vector<int> productQueries(int n, vector<vector<int>>& queries) {
         vector<ll> power;
-        ll sum = 0;
-        while(sum < n){
-            int a = 1;
-            while(sum + (2*a) <= n){
-                a = (a * 2) % mod;
-            }
+        // we don't need to create the power array this way , as we know that a number  in binary form is basically written in minimum number of powers of 2
 
-            sum += a;
-            power.push_back(a);
+        // ll sum = 0;
+        // while(sum < n){
+        //     int a = 1;
+        //     while(sum + (2*a) <= n){
+        //         a = (a * 2) % mod;
+        //     }
+
+        //     sum += a;
+        //     power.push_back(a);
+        // }
+
+        for(int k = 0 ; k < 32 ; k++){
+            if(n & (1 << k)){
+                power.push_back(1 << k);
+            }
         }
 
         sort(power.begin() , power.end());
