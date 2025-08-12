@@ -1,6 +1,18 @@
+#define ll long long
 class Solution {
 public:
     int mod = 1e9 + 7;
+    int fast_power(int base, int exponent) {
+        int result = 1;
+        while (exponent > 0) {
+            if (exponent & 1) {
+                result = (result * 1ll * base) % mod;
+            }
+            base = (base *1ll* base) % mod;
+            exponent >>= 1;
+        }
+        return result;
+    }
     int dp[350][350];
     int func(int ind , int sum , int n , int x , vector<int>& nums){
         if(sum == n) return 1;
@@ -9,7 +21,7 @@ public:
 
         if(dp[ind][sum] != -1) return dp[ind][sum];
 
-        long a = pow(nums[ind] , x);
+        long a = fast_power(nums[ind] , x);
 
         int take = 0;
         if(sum + a <= n) take = func(ind + 1, sum + a , n , x, nums) % mod;
