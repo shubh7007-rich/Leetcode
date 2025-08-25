@@ -1,8 +1,7 @@
 class Solution {
 public:
     bool partitionArray(vector<int>& nums, int k) {
-        // number of groups = maximum number of unique elements 
-        // number of elements in each group = nums / number of groups
+        // logic is as each element in nums be assigned to exactly one group , so mininum number of groups i need to make will be equal to the element with highest frequency 
 
         vector<int> freq(1e5 + 1 , 0);
 
@@ -19,7 +18,5 @@ public:
         if(nums.size() < totalEle) return false;
 
         return (nums.size() % k == 0);
-
-
     }
 };
