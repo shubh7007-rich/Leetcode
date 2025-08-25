@@ -3,14 +3,19 @@ public:
     bool partitionArray(vector<int>& nums, int k) {
         // logic is as each element in nums be assigned to exactly one group , so mininum number of groups i need to make will be equal to the element with highest frequency 
 
-        vector<int> freq(1e5 + 1 , 0);
+        // vector<int> freq(1e5 + 1 , 0);
+        unordered_map<int , int> freq;
 
         int numG = 0 , numE = 0;
 
         for(int i : nums) freq[i]++;
 
-        for(int i = 1 ; i <= 1e5 ; i++){
-            numG = max(numG , freq[i]);
+        // for(int i = 1 ; i <= 1e5 ; i++){
+        //     numG = max(numG , freq[i]);
+        // }
+
+        for(auto [num , f] : freq){
+            numG = max(numG , f);
         }
 
         int totalEle = numG * k;
