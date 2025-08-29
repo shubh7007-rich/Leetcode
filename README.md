@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/shubh7007-rich/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1032-satisfiability-of-equality-equations](https://github.com/shubh7007-rich/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1073-number-of-enclaves](https://github.com/shubh7007-rich/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1121-partition-array-for-maximum-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1127-last-stone-weight](https://github.com/shubh7007-rich/Leetcode/tree/master/1127-last-stone-weight) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/shubh7007-rich/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0967-minimum-falling-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [0972-knight-dialer](https://github.com/shubh7007-rich/Leetcode/tree/master/0972-knight-dialer) |
 | [1025-minimum-cost-for-tickets](https://github.com/shubh7007-rich/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
+| [1121-partition-array-for-maximum-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
