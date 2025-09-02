@@ -3,7 +3,7 @@ public:
     int findShortestSubArray(vector<int>& nums) {
         int deg = 0 , maxi = 0;
 
-        map<int , int> freq1 , freq2;
+        unordered_map<int , int> freq1 , freq2;
 
         for(int i : nums){
             freq1[i]++;
