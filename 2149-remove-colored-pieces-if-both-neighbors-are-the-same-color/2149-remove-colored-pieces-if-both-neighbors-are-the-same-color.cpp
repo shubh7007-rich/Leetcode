@@ -18,10 +18,6 @@ public:
 
         if(cnt1 > cnt2) return true;
 
-        if(cnt1 == cnt2){
-            return false;
-        }
-
         return false;
 
     }
