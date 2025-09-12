@@ -211,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3201-distribute-candies-among-children-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
+| [3462-vowels-game-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/3462-vowels-game-in-a-string) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/shubh7007-rich/Leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -327,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3396-valid-word](https://github.com/shubh7007-rich/Leetcode/tree/master/3396-valid-word) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+| [3462-vowels-game-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/3462-vowels-game-in-a-string) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/shubh7007-rich/Leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -658,4 +660,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/shubh7007-rich/Leetcode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
+| [3462-vowels-game-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/3462-vowels-game-in-a-string) |
+## Game Theory
+|  |
+| ------- |
+| [3462-vowels-game-in-a-string](https://github.com/shubh7007-rich/Leetcode/tree/master/3462-vowels-game-in-a-string) |
 <!---LeetCode Topics End-->
