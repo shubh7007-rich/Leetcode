@@ -1,6 +1,6 @@
 class TimeMap {
 public:
-    unordered_map<string , vector<pair<string , int>>> mp;
+    map<string , vector<pair<string , int>>> mp;
 
     TimeMap() {
         
@@ -11,7 +11,7 @@ public:
     }
     
     string get(string key, int timestamp) {
-        if(!mp.count(key)) return "";
+        // if(!mp.count(key)) return "";
         int l = 0 , r = mp[key].size()-1;
         string ans = "";
 
