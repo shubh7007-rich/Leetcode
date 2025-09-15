@@ -4,7 +4,7 @@ public:
         int cnt = 0;
 
         for(int & num : piles){
-            cnt += ceil((double)num/mid);
+            cnt += ((num + mid - 1)/mid);
 
             if(cnt > h) return false;
         }
