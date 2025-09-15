@@ -12,14 +12,15 @@ public:
     
     string get(string key, int timestamp) {
         // if(!mp.count(key)) return "";
-        int l = 0 , r = mp[key].size()-1;
+        auto & vec = mp[key];
+        int l = 0 , r = vec.size()-1;
         string ans = "";
 
         while(l <= r){
             int mid = (l+r)/2;
             
-            if(mp[key][mid].second <= timestamp){
-                ans = mp[key][mid].first;
+            if(vec[mid].second <= timestamp){
+                ans = vec[mid].first;
                 l = mid + 1;
             }else{
                 r = mid - 1;
