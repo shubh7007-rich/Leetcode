@@ -3,10 +3,13 @@ public:
     bool isVowel(char ch) {
         return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
     }
+
     vector<string> spellchecker(vector<string>& wordlist,
                                 vector<string>& queries) {
         unordered_set<string> exact;
         unordered_map<string, int> mp;
+        unordered_map<string , int> vo;
+
         int ind = 0;
         for (auto& wr : wordlist) {
             exact.insert(wr);
@@ -20,6 +23,17 @@ public:
             if(!mp.count(temp2)){
                 mp[temp2] = ind;
             }
+
+            for(char & ch : temp2){
+                if(isVowel(ch)){
+                    ch = '*';
+                }
+            }
+
+            if(!vo.count(temp2)){
+                vo[temp2] = ind;
+            }
+
             ind++;
         }
 
@@ -58,31 +72,41 @@ public:
 
                 bool flag2 = false;
                
+                    // for (string& s : wordlist) {
+                    //     string temp2 = s;
 
-                    for (string& s : wordlist) {
-                        string temp2 = s;
+                    //     if (temp.length() != temp2.length())
+                    //         continue;
 
-                        if (temp.length() != temp2.length())
-                            continue;
+                    //     for (char& ch : temp2) {
+                    //         ch = tolower(ch);
+                    //     }
+                    //     bool mila = true;
+                    //     for (int i = 0; i < temp.length(); i++) {
+                    //         if (temp2[i] != temp[i]) {
+                    //             if (!isVowel(temp2[i]) || !isVowel(temp[i])) {
+                    //                 mila = false;
+                    //                 break;
+                    //             }
+                    //         }
+                    //     }
 
-                        for (char& ch : temp2) {
-                            ch = tolower(ch);
+                    //     if (mila) {
+                    //         ans.push_back(s);
+                    //         flag2 = true;
+                    //         break;
+                    //     }
+                    // }
+
+                    for(char & ch : temp){
+                        if(isVowel(ch)){
+                            ch = '*';
                         }
-                        bool mila = true;
-                        for (int i = 0; i < temp.length(); i++) {
-                            if (temp2[i] != temp[i]) {
-                                if (!isVowel(temp2[i]) || !isVowel(temp[i])) {
-                                    mila = false;
-                                    break;
-                                }
-                            }
-                        }
+                    }
 
-                        if (mila) {
-                            ans.push_back(s);
-                            flag2 = true;
-                            break;
-                        }
+                    if(vo.count(temp)){
+                        ans.push_back(wordlist[vo[temp]]);
+                        flag2 = true;
                     }
                 
 
