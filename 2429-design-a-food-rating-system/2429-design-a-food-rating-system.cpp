@@ -1,8 +1,8 @@
 class FoodRatings {
 public:
-    map<string , string> cusineBata; // food - cuisine
-    map<string , set<pair<int , string>>> highFood;  // cuisine --> {rating , food}
-    map<string , int> old_rating;  // food - rating
+    unordered_map<string , string> cusineBata; // food - cuisine
+    unordered_map<string , set<pair<int , string>>> highFood;  // cuisine --> {rating , food}
+    unordered_map<string , int> old_rating;  // food - rating
 
 
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
