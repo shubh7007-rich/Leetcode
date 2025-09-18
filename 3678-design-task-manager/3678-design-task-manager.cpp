@@ -5,7 +5,7 @@ public:
     // userId --> {priority , taskId}
     unordered_map<int , int> taskToUser;
     unordered_map<int , int> old_priority;
-    map<int , set<pair<int , int>>> tasks;  // userId -> {priority , taskId}
+    unordered_map<int , set<pair<int , int>>> tasks;  // userId -> {priority , taskId}
     set<pair<int , pair<int , int>>> st;  // {priority , {taskId , userId}}
     TaskManager(vector<vector<int>>& yo) {
         // userId , taskId , priority
