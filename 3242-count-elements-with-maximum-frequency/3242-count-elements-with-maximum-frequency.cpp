@@ -13,11 +13,10 @@ public:
             if(f > maxi){
                 maxi = f;
                 cnt = 1;
-            }
+            }else if(f == maxi) cnt++;
 
-            if(f == maxi) cnt++;
         }
 
-        return maxi*(cnt - 1);
+        return maxi*(cnt);
     }
 };
