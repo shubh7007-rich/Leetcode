@@ -103,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/shubh7007-rich/Leetcode/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
+| [3760-assign-elements-to-groups-with-constraints](https://github.com/shubh7007-rich/Leetcode/tree/master/3760-assign-elements-to-groups-with-constraints) |
 | [3823-count-islands-with-total-value-divisible-by-k](https://github.com/shubh7007-rich/Leetcode/tree/master/3823-count-islands-with-total-value-divisible-by-k) |
 | [3936-split-array-by-prime-indices](https://github.com/shubh7007-rich/Leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Two Pointers
@@ -323,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3678-design-task-manager](https://github.com/shubh7007-rich/Leetcode/tree/master/3678-design-task-manager) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/shubh7007-rich/Leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
+| [3760-assign-elements-to-groups-with-constraints](https://github.com/shubh7007-rich/Leetcode/tree/master/3760-assign-elements-to-groups-with-constraints) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/shubh7007-rich/Leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## String
 |  |
