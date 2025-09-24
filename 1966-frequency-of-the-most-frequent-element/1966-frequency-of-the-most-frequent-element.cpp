@@ -16,6 +16,10 @@ public:
             take l = 0 , r = num's index , if possible for mid , we shift mid to the left else we shift mid to right
 
             so we need old sum , so we will use prefix sum
+
+
+            and instead of using binary search to find the starting point of the window , we can just solve this question using sliding window , we can maintain a window from i to j , and check cost i.e number of operations for that window , if the number of operations are greater than k then we shrink the window , else just increase the j
+            
         */
         sort(nums.begin() , nums.end());
 
@@ -27,38 +31,29 @@ public:
             psum[i] = nums[i] + psum[i-1];
         }
 
-        int maxi = 0;
+        int maxi = 0 , i = 0;
 
         for(int j = 0 ; j < n ; j++){
-            ll num = nums[j];
-
-            int l = 0 , r = j ;
-
-            while(l <= r){
-                int mid = (l+r)/2;
-
-                bool flag = false;
-
-                ll new_sum = num * (j-mid+1);
-                ll old_sum;
-
-                if(mid == 0){
-                    old_sum = psum[j];
-                }else{
-                    old_sum = psum[j] - psum[mid - 1];
-                }
-
-                ll op = new_sum - old_sum;
-
-                if(op <= k){
-                    maxi = max(maxi , j-mid+1);
-                    r = mid - 1;
-                }else{
-                    l = mid + 1;
-                }
+            ll new_sum = nums[j] * 1ll *  (j-i+1);
+            ll old_sum ;
+            if(i == 0){
+                old_sum = psum[j];
+            }else{
+                old_sum = psum[j] - psum[i-1];
             }
+            ll cost = new_sum - old_sum;
+
+            while(i < j && cost > k){
+                i++;
+                new_sum = nums[j] *1ll * (j-i+1);
+                old_sum = psum[j] - psum[i-1];
+                cost = new_sum - old_sum;
+            }
+
+            maxi = max(maxi , j-i+1);
         }
 
         return maxi;
+        
     }
 };
