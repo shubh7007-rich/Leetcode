@@ -24,7 +24,7 @@ public:
         sort(nums.begin() , nums.end());
 
         int n = nums.size();
-        vector<ll> psum(n , 0);
+        vector<ll> psum(n+1, 0);
         psum[0] = nums[0];
 
         for(int i = 1 ; i < nums.size() ; i++){
