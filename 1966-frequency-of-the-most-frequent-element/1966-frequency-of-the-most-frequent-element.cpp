@@ -24,30 +24,27 @@ public:
         sort(nums.begin() , nums.end());
 
         int n = nums.size();
-        vector<ll> psum(n+1, 0);
-        psum[0] = nums[0];
+        // vector<ll> psum(n+1, 0);
+        // psum[0] = nums[0];
 
-        for(int i = 1 ; i < nums.size() ; i++){
-            psum[i] = nums[i] + psum[i-1];
-        }
+        // for(int i = 1 ; i < nums.size() ; i++){
+        //     psum[i] = nums[i] + psum[i-1];
+        // }
 
         int maxi = 0 , i = 0;
+        ll sum = 0;
 
         for(int j = 0 ; j < n ; j++){
             ll new_sum = nums[j] * 1ll *  (j-i+1);
-            ll old_sum ;
-            if(i == 0){
-                old_sum = psum[j];
-            }else{
-                old_sum = psum[j] - psum[i-1];
-            }
-            ll cost = new_sum - old_sum;
+            sum += nums[j];
+
+            ll cost = new_sum - sum;
 
             while(i < j && cost > k){
+                sum -= nums[i];
                 i++;
-                new_sum = nums[j] *1ll * (j-i+1);
-                old_sum = psum[j] - psum[i-1];
-                cost = new_sum - old_sum;
+                new_sum = 1ll * nums[j] * (j-i+1);
+                cost = new_sum - sum;
             }
 
             maxi = max(maxi , j-i+1);
