@@ -43,7 +43,7 @@ public:
             while(i < j && cost > k){
                 sum -= nums[i];
                 i++;
-                new_sum = 1ll * nums[j] * (j-i+1);
+                new_sum -= nums[j];
                 cost = new_sum - sum;
             }
 
