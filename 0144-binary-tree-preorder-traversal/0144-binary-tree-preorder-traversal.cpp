@@ -13,9 +13,10 @@ class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
         stack<TreeNode*> st;
-        vector<int> ans;
 
         TreeNode* node = root;
+
+        vector<int> ans;
 
         while(true){
             if(node != NULL){
