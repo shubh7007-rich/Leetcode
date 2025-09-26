@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0494-target-sum) |
 | [0502-ipo](https://github.com/shubh7007-rich/Leetcode/tree/master/0502-ipo) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
+| [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0692-top-k-frequent-words](https://github.com/shubh7007-rich/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0697-degree-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0697-degree-of-an-array) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/shubh7007-rich/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0392-is-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0392-is-subsequence) |
+| [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/shubh7007-rich/Leetcode/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
@@ -144,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0502-ipo](https://github.com/shubh7007-rich/Leetcode/tree/master/0502-ipo) |
 | [0594-longest-harmonious-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0594-longest-harmonious-subsequence) |
+| [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0692-top-k-frequent-words](https://github.com/shubh7007-rich/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
@@ -278,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0493-reverse-pairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0493-reverse-pairs) |
+| [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0907-koko-eating-bananas](https://github.com/shubh7007-rich/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/shubh7007-rich/Leetcode/tree/master/1023-time-based-key-value-store) |
@@ -433,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0135-candy](https://github.com/shubh7007-rich/Leetcode/tree/master/0135-candy) |
 | [0502-ipo](https://github.com/shubh7007-rich/Leetcode/tree/master/0502-ipo) |
+| [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
