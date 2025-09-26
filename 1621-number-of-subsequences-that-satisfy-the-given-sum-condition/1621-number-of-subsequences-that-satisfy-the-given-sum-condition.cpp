@@ -5,7 +5,6 @@ public:
 
     ll power(ll a , ll b){
         ll res = 1;
-
         while(b){
             if(b&1){
                 res = (res * a) % mod;
@@ -14,7 +13,7 @@ public:
             b = b >> 1;
         }
 
-        return res;
+        return res % mod;
 
     }
     int numSubseq(vector<int>& nums, int target) {
