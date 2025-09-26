@@ -264,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/shubh7007-rich/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/shubh7007-rich/Leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
+| [2059-unique-length-3-palindromic-subsequences](https://github.com/shubh7007-rich/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2529-range-product-queries-of-powers](https://github.com/shubh7007-rich/Leetcode/tree/master/2529-range-product-queries-of-powers) |
 | [3639-zero-array-transformation-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3643-zero-array-transformation-ii) |
@@ -321,6 +322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2023-design-movie-rental-system](https://github.com/shubh7007-rich/Leetcode/tree/master/2023-design-movie-rental-system) |
+| [2059-unique-length-3-palindromic-subsequences](https://github.com/shubh7007-rich/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2429-design-a-food-rating-system](https://github.com/shubh7007-rich/Leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
@@ -359,6 +361,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/shubh7007-rich/Leetcode/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1894-merge-strings-alternately](https://github.com/shubh7007-rich/Leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/shubh7007-rich/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
+| [2059-unique-length-3-palindromic-subsequences](https://github.com/shubh7007-rich/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/shubh7007-rich/Leetcode/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/shubh7007-rich/Leetcode/tree/master/2346-largest-3-same-digit-number-in-string) |
@@ -629,6 +632,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0795-k-th-symbol-in-grammar](https://github.com/shubh7007-rich/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
+| [2059-unique-length-3-palindromic-subsequences](https://github.com/shubh7007-rich/Leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shubh7007-rich/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2529-range-product-queries-of-powers](https://github.com/shubh7007-rich/Leetcode/tree/master/2529-range-product-queries-of-powers) |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/shubh7007-rich/Leetcode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
