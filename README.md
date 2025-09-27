@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [0974-reorder-data-in-log-files](https://github.com/shubh7007-rich/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1006-vowel-spellchecker](https://github.com/shubh7007-rich/Leetcode/tree/master/1006-vowel-spellchecker) |
 | [1025-minimum-cost-for-tickets](https://github.com/shubh7007-rich/Leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1032-satisfiability-of-equality-equations](https://github.com/shubh7007-rich/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
@@ -152,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/shubh7007-rich/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
+| [0974-reorder-data-in-log-files](https://github.com/shubh7007-rich/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/shubh7007-rich/Leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
@@ -361,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0474-ones-and-zeroes](https://github.com/shubh7007-rich/Leetcode/tree/master/0474-ones-and-zeroes) |
 | [0516-longest-palindromic-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0692-top-k-frequent-words](https://github.com/shubh7007-rich/Leetcode/tree/master/0692-top-k-frequent-words) |
+| [0974-reorder-data-in-log-files](https://github.com/shubh7007-rich/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [0977-distinct-subsequences-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0977-distinct-subsequences-ii) |
 | [1006-vowel-spellchecker](https://github.com/shubh7007-rich/Leetcode/tree/master/1006-vowel-spellchecker) |
 | [1023-time-based-key-value-store](https://github.com/shubh7007-rich/Leetcode/tree/master/1023-time-based-key-value-store) |
