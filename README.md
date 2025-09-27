@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1121-partition-array-for-maximum-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1127-last-stone-weight](https://github.com/shubh7007-rich/Leetcode/tree/master/1127-last-stone-weight) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/shubh7007-rich/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
@@ -201,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1121-partition-array-for-maximum-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1130-last-stone-weight-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/1130-last-stone-weight-ii) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1263-number-of-dice-rolls-with-target-sum) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/shubh7007-rich/Leetcode/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
@@ -319,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/shubh7007-rich/Leetcode/tree/master/1023-time-based-key-value-store) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/shubh7007-rich/Leetcode/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1370-count-number-of-nice-subarrays](https://github.com/shubh7007-rich/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1813-maximum-erasure-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1813-maximum-erasure-value) |
