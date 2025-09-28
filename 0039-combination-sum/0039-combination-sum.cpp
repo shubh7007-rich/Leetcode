@@ -1,12 +1,16 @@
 class Solution {
 public:
     void func(int ind , int sum ,vector<int>& nums , vector<int>& temp , vector<vector<int>>& ans , int target){
-        if(ind >= nums.size()){
-            if(sum == target){
+        if(sum == target){
                 ans.push_back(temp);
+                return;
             }
+        if(ind >= nums.size()){
+            
             return;
         }
+        
+
         if(sum + nums[ind] <= target){
             temp.push_back(nums[ind]);
             func(ind , sum + nums[ind] ,nums , temp , ans , target);
