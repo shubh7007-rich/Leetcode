@@ -1,30 +1,25 @@
 class Solution {
 public:
     vector<string> topKFrequent(vector<string>& words, int k) {
-        unordered_map<string , int> mp;
+        unordered_map<string , int> freq;
 
         for(string str : words){
-            mp[str]++;
+            freq[str]++;
         }
 
-        auto cmp = [](pair<int , string>& p1 , pair<int , string>& p2){
-            if(p1.first == p2.first){
-                return p1.second > p2.second;
-            }
-            return p1.first < p2.first;
-        };
-
-        priority_queue<pair<int , string> , vector<pair<int , string>> , decltype(cmp)> pq(cmp);
-
-        for(auto [str , freq] : mp){
-            pq.push({freq , str});
-        }
-
+        vector<pair<int , string>> vec;
         vector<string> ans;
 
-        while(k--){
-            ans.push_back(pq.top().second);
-            pq.pop();
+        for(auto [str, f] : freq){
+            vec.push_back({-f , str});
+        }
+        int cnt = 0;
+        sort(vec.begin() , vec.end());
+
+        for(auto p : vec){
+            ans.push_back(p.second);
+            cnt++;
+            if(cnt == k) break;
         }
 
         return ans;
