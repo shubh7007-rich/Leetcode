@@ -1,23 +1,24 @@
 class Solution {
 public:
-    void solveSudoku(vector<vector<char>>& board) {
-        boardFill(board);
-    }
+    bool isPos(char ch ,int row , int col , vector<vector<char>>& board){
+        // once in that row
+        for(int i = 0 ; i < 9 ; i++){
+            if(board[row][i] == ch) return false;
+        }
 
-    bool boardFill(vector<vector<char>>& board){
-        for(int row = 0 ; row < 9 ; row++){
-            for(int col = 0 ; col < 9 ; col++){
-                if(board[row][col] == '.'){
+        // once in that col
+        for(int i = 0 ; i < 9 ; i++){
+            if(board[i][col] == ch) return false;
+        }
 
-                    for(char c = '1' ; c <= '9' ; c++){
-                        if(isPossible(c , row , col , board)){
-                            board[row][col] = c;
-                            if(boardFill(board)){
-                                return true;
-                            }
-                            board[row][col] = '.';
-                        }
-                    }
+        // once in that 3x3 sub-box
+
+        int row_start = (row/3) * 3;
+        int col_start = (col/3) * 3;
+
+        for(int i = row_start ; i < row_start + 3 ; i++){
+            for(int j = col_start ; j < col_start + 3 ; j++){
+                if(board[i][j] == ch){
                     return false;
                 }
             }
@@ -26,23 +27,27 @@ public:
         return true;
     }
 
-    bool isPossible(char c , int row , int col , vector<vector<char>>& board){
+    bool boardFill(vector<vector<char>>& board){
+        for(int row = 0 ; row < 9 ; row++){
+            for(int col = 0 ; col < 9 ; col++){
+                if(board[row][col] == '.'){
+                    for(int i = '1' ; i <= '9' ; i++){
+                        if(isPos(i ,row , col ,  board)){
+                            board[row][col] = i;
+                            if(boardFill(board)) return true;
+                            board[row][col] = '.';
+                        }
+                    }
 
-        for(int i = 0 ; i < 9 ; i++){
-            if(board[row][i] == c) return false;   // row check
-            if(board[i][col] == c) return false;  // col check
-        }
-
-        // now checking for the 3 x 3 grid
-
-        int rNo = (row/3) * 3 , cNo = (col/3) * 3;
-
-        for(int i = rNo ; i < rNo + 3 ; i++){
-            for(int j = cNo ; j < cNo + 3 ; j++){
-                if(board[i][j] == c) return false;
+                    return false;
+                }
             }
-        }
+        } 
 
         return true;
+    }
+    
+    void solveSudoku(vector<vector<char>>& board) {
+        boardFill(board);
     }
 };
