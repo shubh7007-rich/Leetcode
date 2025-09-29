@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0697-degree-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0697-degree-of-an-array) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
+| [0792-binary-search](https://github.com/shubh7007-rich/Leetcode/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
 | [0907-koko-eating-bananas](https://github.com/shubh7007-rich/Leetcode/tree/master/0907-koko-eating-bananas) |
@@ -291,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/shubh7007-rich/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0493-reverse-pairs](https://github.com/shubh7007-rich/Leetcode/tree/master/0493-reverse-pairs) |
 | [0611-valid-triangle-number](https://github.com/shubh7007-rich/Leetcode/tree/master/0611-valid-triangle-number) |
+| [0792-binary-search](https://github.com/shubh7007-rich/Leetcode/tree/master/0792-binary-search) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0907-koko-eating-bananas](https://github.com/shubh7007-rich/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/shubh7007-rich/Leetcode/tree/master/1023-time-based-key-value-store) |
