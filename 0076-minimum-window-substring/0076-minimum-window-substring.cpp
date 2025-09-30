@@ -58,7 +58,7 @@ public:
 
             bool flag = true;
 
-            for(int i = 65 ; i < 128 ; i++){
+            for(int i = 65 ; i < 123 ; i++){   // A - 65 , a - 97 , z - 122 
                 if(freqS[i] < freqT[i]){
                     flag = false;
                     break;
