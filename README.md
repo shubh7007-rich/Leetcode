@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shubh7007-rich/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2307-replace-non-coprime-numbers-in-array) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/shubh7007-rich/Leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2429-design-a-food-rating-system](https://github.com/shubh7007-rich/Leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/shubh7007-rich/Leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
@@ -239,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/shubh7007-rich/Leetcode/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2307-replace-non-coprime-numbers-in-array) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [3199-distribute-candies-among-children-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3199-distribute-candies-among-children-i) |
 | [3201-distribute-candies-among-children-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
@@ -253,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/shubh7007-rich/Leetcode/tree/master/0062-unique-paths) |
+| [2324-find-triangular-sum-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [3199-distribute-candies-among-children-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3199-distribute-candies-among-children-i) |
 | [3201-distribute-candies-among-children-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 ## Matrix
@@ -689,6 +692,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [2324-find-triangular-sum-of-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Design
 |  |
