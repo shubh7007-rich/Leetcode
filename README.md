@@ -90,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/shubh7007-rich/Leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1813-maximum-erasure-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1813-maximum-erasure-value) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/shubh7007-rich/Leetcode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/shubh7007-rich/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1917-maximum-average-pass-ratio](https://github.com/shubh7007-rich/Leetcode/tree/master/1917-maximum-average-pass-ratio) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/shubh7007-rich/Leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
@@ -216,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/shubh7007-rich/Leetcode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/shubh7007-rich/Leetcode/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
