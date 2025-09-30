@@ -1,53 +1,78 @@
 class Solution {
 public:
-    string minWindow(string s, string t) {
-        vector<int> freq1(128, 0), freq2(128, 0);
+    // s = aabdc   t = abc
+    /*
+     brute force approach 
+        string ans ="";
+        int n = s.length() , mini = INT_MAX;
 
-        int validS = -1, validE = -1;
+        for(int i = 0 ; i < n ; i++){
+            for(int j = i ; j < n ; j++){
+                // string str = s.substr(i , j-i+1);
+                vector<int> marked(n , 0);
+                bool flag = true;
+                for(char ch : t){
+                    bool milgya = false;
+                    for(int k = i ; k <= j ;k++){
+                        if(s[k] == ch && !marked[k]){
+                            milgya = true;
+                            marked[k] = 1;
+                            break;
+                        }
+                    }
 
-        for (char ch : t) {
-            freq2[ch]++;
+                    if(!milgya){
+                        flag = false;
+                        break;
+                    }
+                }
+
+                if(flag){
+                    if(mini > j-i+1){
+                        mini = j-i+1;
+                        ans = s.substr(i , j-i+1);
+                    }
+                }
+
+            }
         }
 
-        int i = 0;
+        return ans;*/
 
-        for (int j = 0; j < s.length(); j++) {
-            freq1[s[j]]++;
+    string minWindow(string s, string t) {
+        vector<int> freqS(128 , 0) , freqT(128 , 0);
+
+        int i = 0  , n = s.length() , mini = INT_MAX; 
+
+        string ans = "";
+
+        for(char ch : t) freqT[ch]++;
+
+        for(int j = 0 ; j < n ; j++){
+            freqS[s[j]]++;
+
+            while(i < j && freqS[s[i]] > freqT[s[i]]){
+                freqS[s[i]]--;
+                i++;
+            }
 
             bool flag = true;
 
-            for (int k = 0; k < 128; k++) {
-                if (freq1[k] < freq2[k]) {
+            for(int i = 65 ; i < 128 ; i++){
+                if(freqS[i] < freqT[i]){
                     flag = false;
                     break;
                 }
             }
 
-            if (flag == true) {
-                while (true) {
-                    bool f = true;
-
-                    if((j-i+1 < validE - validS + 1) || (validS == -1)) {
-                        validS = i, validE = j;
-                    }
-
-                    freq1[s[i]]--;
-                    i++;
-
-                    for (int k = 0; k < 128; k++) {
-                        if (freq1[k] < freq2[k]) {
-                            f = false;
-                            break;
-                        }
-                    }
-
-                    if(!f) break;
+            if(flag){
+                if(mini > j-i+1){
+                    mini = j-i+1;
+                    ans = s.substr(i , j-i+1);
                 }
             }
         }
 
-        if(validS == -1) return "";
-
-        return s.substr(validS , validE - validS + 1);
+        return ans;
     }
 };
