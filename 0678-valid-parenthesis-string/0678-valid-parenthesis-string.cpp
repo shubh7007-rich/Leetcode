@@ -18,9 +18,9 @@ public:
         if(dp[ind][cnt] != -1) return dp[ind][cnt];
 
         if(s[ind] == '('){
-            if(dp[ind][cnt] = func(ind + 1 , cnt + 1 , s)) return true;
+            if(func(ind + 1 , cnt + 1 , s))  return dp[ind][cnt] = true;
         }else if(s[ind] == ')'){
-            if(dp[ind][cnt] = func(ind + 1 , cnt - 1 , s)) return true;
+            if(func(ind + 1 , cnt - 1 , s)) return dp[ind][cnt] = true;
         }else{
             return dp[ind][cnt] =  (func(ind + 1 , cnt , s) | func(ind + 1 , cnt+1 , s) | func(ind + 1 , cnt-1 , s));
         }
