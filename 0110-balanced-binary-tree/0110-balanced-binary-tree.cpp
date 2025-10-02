@@ -24,21 +24,25 @@ public:
         if(root == NULL) return 0;
 
         int left = maxDepth(root->left);
+        if(left == -1) return -1;
         int right = maxDepth(root->right);
+        if(right == -1) return -1;
+
+        if(abs(left - right) > 1) return -1;
 
         return 1 + max(left , right);
     }
     bool isBalanced(TreeNode* root) {
-        if(root == NULL) return true;
+        // if(root == NULL) return true;
 
-        if(!isBalanced(root->left)) return false;
-        if(!isBalanced(root->right)) return false;
+        // if(!isBalanced(root->left)) return false;
+        // if(!isBalanced(root->right)) return false;
 
-        int left = maxDepth(root->left);
-        int right = maxDepth(root->right);
+        // int left = maxDepth(root->left);
+        // int right = maxDepth(root->right);
 
-        if(abs(left - right) > 1) return false;
+        // if(abs(left - right) > 1) return false;
 
-        return true;
+        return (maxDepth(root) == -1) ? false : true;
     }
 };
