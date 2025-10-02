@@ -11,26 +11,22 @@
  */
 class Solution {
 public:
-    bool solve(TreeNode* p , TreeNode* q){
-        if(p == NULL && q == NULL) return true;
+    bool func(TreeNode* a , TreeNode* b){
 
-        if(p == NULL || q == NULL) return false;
+        if(a && !b || !a && b) return false;
 
-        if(p->val != q->val) return false;
+        if(a == NULL && b == NULL) return true;
+        
+        if(a->val != b->val) return false;
 
-        if(!solve(p->left , q->right) || !solve(p->right , q->left)){
-            return false;
-        }
+        bool left = func(a->left , b->right);
+        if(!left) return false;
+        bool right = func(a->right , b->left);
+        if(!right) return false;
 
         return true;
     }
     bool isSymmetric(TreeNode* root) {
-        if(root == NULL || (root->left == NULL && root->right == NULL)) return true;
-
-        if(root->left == NULL || root->right == NULL) return false;
-
-        TreeNode* p = root->left , *q = root->right;
-
-        return solve(p , q);
+        return func(root->left , root->right);
     }
 };
