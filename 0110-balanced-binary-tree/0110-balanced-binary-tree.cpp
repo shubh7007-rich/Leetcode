@@ -11,20 +11,33 @@
  */
 class Solution {
 public:
-    int depth(TreeNode* root){
-        if(!root) return 0;
+    /*
+        height balanced binary tree is the one in which the difference between the height of two subtrees does not differ by one
 
-        int left = depth(root->left);
-        if(left == -1) return -1;
-        int right = depth(root->right);
-        if(right == -1) return -1;
+        brute force approach would be to go at every node using any traversal and calculate the height of left and right subtree using the maxDepth function and if it differs more than 1 than return false
 
-        if(abs(left - right) > 1) return -1;
+        So when we wrote the maxDepth function to find the height of the binary tree in each recursive call we were calculating height of the left and right subtree , so we can just check for this balance condition in every recursive if gets violated at any step we can just return false
+
+    */
+
+    int maxDepth(TreeNode* root){
+        if(root == NULL) return 0;
+
+        int left = maxDepth(root->left);
+        int right = maxDepth(root->right);
 
         return 1 + max(left , right);
     }
     bool isBalanced(TreeNode* root) {
-        if(depth(root) == -1) return false;
+        if(root == NULL) return true;
+
+        if(!isBalanced(root->left)) return false;
+        if(!isBalanced(root->right)) return false;
+
+        int left = maxDepth(root->left);
+        int right = maxDepth(root->right);
+
+        if(abs(left - right) > 1) return false;
 
         return true;
     }
