@@ -12,8 +12,11 @@
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        if(p == NULL && q != NULL || p != NULL && q == NULL) return false;
+        // if(p == NULL && q != NULL || p != NULL && q == NULL) return false; why write this way
+
         if(p == NULL && q== NULL) return true;
+
+        if(!p && q || p && !q) return false;
 
         if(p->val != q->val) return false;
 
