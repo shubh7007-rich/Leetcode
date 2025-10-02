@@ -19,7 +19,7 @@ public:
         int left = maxDepth(root->left);
         int right = maxDepth(root->right);
 
-        maxi = max({maxi , root->val , left + right + root->val , left + root->val , right + root->val});
+        maxi = max({maxi , left + right + root->val , root->val , left + root->val , right + root->val});
 
         return root->val + max({left , right , 0});
     }
