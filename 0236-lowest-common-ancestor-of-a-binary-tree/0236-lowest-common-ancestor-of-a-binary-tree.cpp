@@ -9,65 +9,41 @@
  */
 class Solution {
 public:
-    /*
-
-    Approach 2 -> T.C - O(n) , S.C - O(1)
-    TreeNode* solve(TreeNode* root, TreeNode* p, TreeNode* q){
-        if(!root) return NULL;
-
-        if(root == p || root == q) return root;
-
-        TreeNode * left = solve(root->left , p , q);
-        TreeNode * right = solve(root->right , p , q);
-
-        if(left && right) return root;
-
-        if(left != NULL) return left;
-
-        return right;
-    }
-    */
-    bool getPath(TreeNode* root, TreeNode* target , vector<TreeNode*> &vec){
+    bool func(TreeNode* root, TreeNode* target, vector<TreeNode*>& path){
         if(root == NULL) return false;
-
-        vec.push_back(root);
         
+        path.push_back(root);
+
         if(root == target) return true;
 
-        if(getPath(root->left , target , vec)){
-            return true;
-        }
 
-        if(getPath(root->right , target , vec)){
-            return true;
-        }
-
-        vec.pop_back();
+        if(func(root->left , target , path)) return true;
+        if(func(root->right , target , path)) return true;
+        path.pop_back();
 
         return false;
+        
     }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        // return solve(root , p , q);
+        /*
+            Approach 1 --> get path from root to the nodes and the first node to match we will return
 
-        //     Appraoch 1 -> We can store paths to both of the nodes and store
-        //     them in a vector and then traverse both of the vectors
-        //     simultaneously and return the first common node
-        // T.C - O(N) , S.C - O(n)
+        */
 
-        vector<TreeNode*> pathQ, pathP;
-        TreeNode *ans = NULL;
+        vector<TreeNode*> path1;
+        vector<TreeNode*> path2;
 
-        if(root == p || root == q) return root;
-
-        getPath(root, p, pathP);
-        getPath(root, q, pathQ);
-
-        int len = min(pathP.size() , pathQ.size());
-
-        for(int i = 0 ; i < len ; i++){
-            if(pathQ[i] == pathP[i]) ans = pathQ[i];
+        func(root , p , path1);
+        func(root , q , path2);
+        TreeNode* ans = NULL;
+        for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
+            if(path1[i] == path2[i]){
+                ans = path1[i];
+            }
         }
-
+        for(auto i : path2){
+            cout << i->val << " ";
+        }
         return ans;
     }
 };
