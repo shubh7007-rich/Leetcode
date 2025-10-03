@@ -9,37 +9,35 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+ #define ll long long
 class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
-        if(root == NULL) return 0;
-
-        long long maxWidth = 1;
-
-        queue<pair<TreeNode* , int>> que;               // Node and Index
+        if(!root) return 0;
+        queue<pair<TreeNode* , int>> que;  // node , index
 
         que.push({root , 0});
+        ll maxi = 0;
 
         while(!que.empty()){
+            ll leftmost = -1 , rightmost = -1;
             int size = que.size();
-            long long firstIdx = -1 , lastIndex = 0;
             while(size--){
                 auto p = que.front();
+                TreeNode* node = p.first;
+                ll index = p.second;
                 que.pop();
 
-                TreeNode* node = p.first;
-                long long index = p.second;
+                if(leftmost == -1) leftmost = index;
+                rightmost = index;
 
-                if(firstIdx == -1) firstIdx = index;
-                lastIndex = index;
-
-                if(node->left) que.push({node->left , 2*index + 1});
-                if(node->right) que.push({node->right , 2*index + 2});
+                if(node->left) que.push({node->left , 2*1ll *index + 1});
+                if(node->right) que.push({node->right , 2* 1ll *index + 2});
             }
 
-            maxWidth = max(maxWidth , lastIndex - firstIdx + 1);
+            maxi = max(maxi , rightmost - leftmost + 1);
         }
 
-        return maxWidth;
+        return maxi;
     }
 };
