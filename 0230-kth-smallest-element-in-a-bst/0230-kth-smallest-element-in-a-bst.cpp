@@ -11,18 +11,32 @@
  */
 class Solution {
 public:
-    void inorder(TreeNode* node , vector<int>& ans){
-        if(node == NULL) return;
+    int cnt = 0 ;
+    int inorder(TreeNode* node , int k){
+        if(node == NULL) return -1;
+        int left = inorder(node->left  , k);
+        if( left != -1) return left;
+        cnt++;
+        if(cnt == k) return node->val;
+        // ans.push_back(node->val);
+        int right = inorder(node->right , k);
+        if(right != -1) return right;
 
-        inorder(node->left , ans);
-        ans.push_back(node->val);
-        inorder(node->right , ans);
+        return -1;
     }
     int kthSmallest(TreeNode* root, int k) {
-        vector<int> ans;
+        /*
+            Brute force approach or naive approach -- just do any traversal to traverse the whole tree and store the values in the tree and just sort and return the k-1 value
 
-        inorder(root , ans);
+            better approach --> just do the inorder traversal and store the values in an array and return the k-1 approach
 
-        return ans[k-1];
+            Even better approach --> as we just the particular value so instead of doing the whole traversal and store the whole bst in an array , just take a cnt and do cnt++ everytime u visit a node and as we reach cnt == k , return that node
+
+        */
+        // vector<int> ans;
+
+        return inorder(root , k);
+
+        // return ans[k-1];
     }
 };
