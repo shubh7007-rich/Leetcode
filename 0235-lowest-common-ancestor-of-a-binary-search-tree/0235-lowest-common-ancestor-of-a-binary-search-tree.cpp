@@ -14,11 +14,19 @@ public:
         if(root == NULL) return false;
 
         path.push_back(root);
-        
+
         if(root == target) return true;
 
-        if(getPath(root->left , target , path)) return true;
-        if(getPath(root->right , target , path)) return true;
+        bool ans = false;
+
+        if(root->val > target->val){
+            ans = getPath(root->left , target , path);
+        }else{
+            ans = getPath(root->right , target , path);
+        }
+
+        if(ans) return true;
+
         path.pop_back();
 
         return false;
