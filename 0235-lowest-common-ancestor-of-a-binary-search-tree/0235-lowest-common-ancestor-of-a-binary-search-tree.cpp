@@ -31,26 +31,47 @@ public:
 
         return false;
     }
+
+    TreeNode* better(TreeNode* root , TreeNode* p , TreeNode* q){
+        if(root == NULL) return NULL;
+
+        if(root == p || root == q) return root;
+
+        TreeNode* left = better(root->left , p , q);
+        TreeNode* right = better(root->right , p , q);
+
+        if(left && right) return root;
+
+        if(left == NULL) return right;
+
+        return left;
+    }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         /*
             Brute Force approach --> just calculate the path from the root node to p and to q , and take the rightmost common node
+                T.C --> O(H) , S.C --> O(H)
 
+            Better Approaoch --> just 
         */
 
         // coding the brute force approach
-        vector<TreeNode*> path1 ,path2;
+        // vector<TreeNode*> path1 ,path2;
 
-        getPath(root , p , path1);
-        getPath(root , q , path2);
+        // getPath(root , p , path1);
+        // getPath(root , q , path2);
 
-        TreeNode* ans = NULL;
+        // TreeNode* ans = NULL;
 
-        for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
-            if(path1[i] == path2[i]){
-                ans = path1[i];
-            }
-        }
+        // for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
+        //     if(path1[i] == path2[i]){
+        //         ans = path1[i];
+        //     }
+        // }
 
-        return ans;
+        // return ans;
+
+        // coding better approach
+
+        return better(root , p , q);
     }
 };
