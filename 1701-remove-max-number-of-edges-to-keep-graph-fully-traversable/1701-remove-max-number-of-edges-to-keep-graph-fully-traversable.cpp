@@ -58,10 +58,10 @@ public:
         //     find(i , parentA);
         //     find(i , parentB);
         // }
-        int c1 = 0 , c2 = 0 ;
-        for(int i = 1; i < n+1 ; i++){
-            if(find(i , parentA) == i) c1++;
-            if(find(i , parentB) == i) c2++;
+        int c1 = 1 , c2 = 1 , co1 = find(1 , parentA) , co2 = find(1 , parentB);
+        for(int i = 2; i < n+1 ; i++){
+            if(co1 != find(i , parentA)) c1++;
+            if(find(i , parentB) != co2) c2++;
 
             if(c1 > 1 || c2 > 1) return -1;
         }
