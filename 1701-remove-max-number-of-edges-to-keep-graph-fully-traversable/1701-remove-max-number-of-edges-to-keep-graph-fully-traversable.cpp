@@ -1,7 +1,5 @@
 class Solution {
 public:
-    vector<int> parentA , rankA , parentB , rankB;
-
     int find(int node , vector<int>& parent){
         if(node == parent[node]) return node;
 
@@ -22,64 +20,58 @@ public:
             parent[p2] = p1;
         }
     }
-    void intialize(int n){
-        parentA.resize(n);
-        rankA.resize(n , 0);
-        parentB.resize(n);
-        rankB.resize(n , 0);
+    int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
+        vector<int> parentA(n+1) , rankA(n+1 , 0) , parentB(n+1) , rankB(n+1 , 0);
 
-        for(int i = 0 ; i < n ; i++){
+        for(int i = 1 ; i < n+1 ; i++){
             parentA[i] = i;
-        }
-        for(int i = 0 ; i < n ; i++){
             parentB[i] = i;
         }
-    }
-    int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
-        intialize(n+1);
+        // i will use all edges of type 3 as it will most benefitical bcz that edge can be used by both alice and bob
 
         int cnt = 0;
-        
-        sort(edges.begin() , edges.end() , [](vector<int>& a , vector<int>& b){
-            return a[0] > b[0];
-        });
+        for(auto vec : edges){
+            if(vec[0] == 3){
+                int p1 = find(vec[1] , parentA) , p2 = find(vec[2] , parentA);
+                int p3 = find(vec[1] , parentB) , p4 = find(vec[2] , parentB);
 
-        for(vector<int>& vec : edges){
-            int type = vec[0];
-            int n1 = vec[1] , n2 = vec[2];
-
-    
-            if(type == 1){
-                int p1 = find(n1 , parentA) , p2 = find(n2 , parentA);
-                if(p1 == p2){
+                if(p1 == p2 && p3 == p4) {
                     cnt++;
-                }else{
-                    unionn(p1 , p2 , parentA , rankA);
+                    continue;
                 }
-            }else if(type == 2){
-                int p1 = find(n1 , parentB) , p2 = find(n2 , parentB);
-                if(p1 == p2){
-                    cnt++;
-                }else{
-                    unionn(p1 , p2 , parentB , rankB);
-                }
-            }else{
-                int p1 = find(n1 , parentA) , p2 = find(n2 , parentA) , p3 = find(n1 , parentB) , p4 = find(n2 , parentB);
-
-                if(p1 == p2 && p3 == p4){
-                    cnt++;
-                }
-
-                unionn(p1 , p2 , parentA , rankA);
-                unionn(p3 , p4 , parentB , rankB);
+                unionn(vec[1] , vec[2] , parentA , rankA);
+                unionn(vec[1] , vec[2] , parentB , rankB);
             }
         }
+        for(auto vec : edges){
+            if(vec[0] != 3){
+                if(vec[0] == 1){
+                    int p1 = find(vec[1] , parentA) , p2 = find(vec[2] , parentA);
 
-        int c1 = 0 , c2 = 0;
+                    if(p1 == p2){
+                        cnt++;
+                    }else{
+                        unionn(p1 , p2 , parentA , rankA);
+                    }
+                }else{
+                    int p1 = find(vec[1] , parentB) , p2 = find(vec[2] , parentB);
 
-        for(int i = 1 ; i < n+1 ; i++){   // start from 1 here , no 0 node
-            if(i == find(i , parentA)) c1++;
-            if(i == find(i , parentB)) c2++;
+                    if(p1 == p2){
+                        cnt++;
+                    }else{
+                        unionn(p1 , p2 , parentB , rankB);
+                    }
+                }
+            }
+        }
+        for(int i = 1;  i< n+1 ; i++){
+            find(i , parentA);
+            find(i , parentB);
+        }
+        int c1 = 1 , c2 = 1 , co1 = parentA[1] , co2 = parentB[1];
+        for(int i = 2; i < n+1 ; i++){
+            if(parentA[i] != co1) c1++;
+            if(parentB[i] != co2) c2++;
 
             if(c1 > 1 || c2 > 1) return -1;
         }
