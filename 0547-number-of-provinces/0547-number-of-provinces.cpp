@@ -24,8 +24,10 @@ public:
     }
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size();
-        
+
         vector<int> parent(n) , rank(n , 0);
+
+        int components = n;
 
         for(int i = 0 ; i < n ; i++){
             parent[i] = i;
@@ -34,14 +36,11 @@ public:
             for(int j = 0 ; j < n ; j++){
                 if(i == j || !isConnected[i][j]) continue;
 
-                merge(i , j , parent , rank);
+                if(merge(i , j , parent , rank)) components--;
             }
         }
-        set<int> st;
-        for(int i = 0 ; i < n ; i++){
-            st.insert(find(i , parent));
-        }
 
-        return st.size();
+
+        return components;
     }
 };
