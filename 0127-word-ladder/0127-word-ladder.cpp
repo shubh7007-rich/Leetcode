@@ -1,45 +1,41 @@
 class Solution {
 public:
-    int ladderLength(string beginWord, string endWord,
-                     vector<string>& wordList) {
-        unordered_set<string> st(wordList.begin(), wordList.end());
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        unordered_set<string> check(wordList.begin(), wordList.end());
 
-        if (st.find(endWord) == st.end())
-            return 0;
-
+        if(!check.count(endWord)) return 0;
+        
         queue<string> que;
-
         que.push(beginWord);
-
+        check.erase(beginWord);
         int lvl = 1;
 
-        unordered_set<string> vis;
-
-        vis.insert(beginWord);
-
-        while (!que.empty()) {
+        while(!que.empty()){
             int size = que.size();
 
-            while (size--) {
+            while(size--){
                 string fro = que.front();
                 que.pop();
 
-                for (int i = 0; i < fro.length(); i++) {
-                    for (char ch = 'a'; ch <= 'z'; ch++) {
-                        string temp = fro;
-                        temp[i] = ch;
+                if(fro == endWord) return lvl ;
 
-                        if (st.find(temp) != st.end() &&
-                            (vis.find(temp) == vis.end())) {
-                            if (temp == endWord)
-                                return lvl+1;
-                            que.push(temp);
-                            vis.insert(temp);
+                for(int i = 0 ; i < fro.size() ; i++){
+                    char ch = fro[i];
+                    
+                    for(char j = 'a' ; j <= 'z' ; j++){
+                        fro[i] = j;
+
+                        if(check.count(fro)){
+                            que.push(fro);
+                            check.erase(fro);
                         }
                     }
-                }
-            }
 
+                    fro[i] = ch;
+                }
+
+
+            }
             lvl++;
         }
 
