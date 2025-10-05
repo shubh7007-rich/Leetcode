@@ -6,10 +6,10 @@ public:
         return parent[node] = find(parent[node] , parent);
     }
 
-    void unionn(int n1 , int n2 , vector<int>& parent , vector<int>& rank){
+    bool unionn(int n1 , int n2 , vector<int>& parent , vector<int>& rank){
         int p1 = find(n1 , parent) , p2 = find(n2 , parent);
 
-        if(p1 == p2) return;
+        if(p1 == p2) return false;
 
         if(rank[p1] > rank[p2]){
             parent[p2] = p1;
@@ -19,6 +19,8 @@ public:
             rank[p1]++;
             parent[p2] = p1;
         }
+
+        return true;
     }
     int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
         vector<int> parentA(n+1) , rankA(n+1 , 0) , parentB(n+1) , rankB(n+1 , 0);
@@ -35,43 +37,31 @@ public:
                 int p1 = find(vec[1] , parentA) , p2 = find(vec[2] , parentA);
                 int p3 = find(vec[1] , parentB) , p4 = find(vec[2] , parentB);
 
-                if(p1 == p2 && p3 == p4) {
+                if(p1 == p2 && p3 == p4){
                     cnt++;
-                    continue;
-                }
-                unionn(vec[1] , vec[2] , parentA , rankA);
-                unionn(vec[1] , vec[2] , parentB , rankB);
+                }else{
+                    unionn(vec[1] , vec[2] , parentA , rankA);
+                    unionn(vec[1] , vec[2] , parentB , rankB);
+                } 
             }
         }
         for(auto vec : edges){
             if(vec[0] != 3){
                 if(vec[0] == 1){
-                    int p1 = find(vec[1] , parentA) , p2 = find(vec[2] , parentA);
-
-                    if(p1 == p2){
-                        cnt++;
-                    }else{
-                        unionn(p1 , p2 , parentA , rankA);
-                    }
+                    if(!unionn(vec[1] , vec[2] , parentA , rankA)) cnt++;
                 }else{
-                    int p1 = find(vec[1] , parentB) , p2 = find(vec[2] , parentB);
-
-                    if(p1 == p2){
-                        cnt++;
-                    }else{
-                        unionn(p1 , p2 , parentB , rankB);
-                    }
+                    if(!unionn(vec[1] , vec[2] , parentB , rankB)) cnt++;
                 }
             }
         }
-        for(int i = 1;  i< n+1 ; i++){
-            find(i , parentA);
-            find(i , parentB);
-        }
-        int c1 = 1 , c2 = 1 , co1 = parentA[1] , co2 = parentB[1];
-        for(int i = 2; i < n+1 ; i++){
-            if(parentA[i] != co1) c1++;
-            if(parentB[i] != co2) c2++;
+        // for(int i = 1;  i< n+1 ; i++){  instead whenever u need a parent use find function not parent array
+        //     find(i , parentA);
+        //     find(i , parentB);
+        // }
+        int c1 = 0 , c2 = 0 ;
+        for(int i = 1; i < n+1 ; i++){
+            if(find(i , parentA) == i) c1++;
+            if(find(i , parentB) == i) c2++;
 
             if(c1 > 1 || c2 > 1) return -1;
         }
