@@ -441,6 +441,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0127-word-ladder](https://github.com/shubh7007-rich/Leetcode/tree/master/0127-word-ladder) |
 | [0199-binary-tree-right-side-view](https://github.com/shubh7007-rich/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0207-course-schedule](https://github.com/shubh7007-rich/Leetcode/tree/master/0207-course-schedule) |
 | [0279-perfect-squares](https://github.com/shubh7007-rich/Leetcode/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/shubh7007-rich/Leetcode/tree/master/0322-coin-change) |
 | [0547-number-of-provinces](https://github.com/shubh7007-rich/Leetcode/tree/master/0547-number-of-provinces) |
@@ -470,6 +471,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0144-binary-tree-preorder-traversal](https://github.com/shubh7007-rich/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/shubh7007-rich/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/shubh7007-rich/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0207-course-schedule](https://github.com/shubh7007-rich/Leetcode/tree/master/0207-course-schedule) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/shubh7007-rich/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -546,6 +548,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/shubh7007-rich/Leetcode/tree/master/0207-course-schedule) |
 | [0547-number-of-provinces](https://github.com/shubh7007-rich/Leetcode/tree/master/0547-number-of-provinces) |
 | [1032-satisfiability-of-equality-equations](https://github.com/shubh7007-rich/Leetcode/tree/master/1032-satisfiability-of-equality-equations) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/shubh7007-rich/Leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
@@ -556,6 +559,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Topological Sort
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/shubh7007-rich/Leetcode/tree/master/0207-course-schedule) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 ## Memoization
 |  |
