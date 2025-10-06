@@ -5,7 +5,7 @@ public:
     void dfs(int r , int c , vector<vector<int>>& grid){
         grid[r][c] = 2;
 
-        for(auto vec : directions){
+        for(auto & vec : directions){
             int r1 = r + vec[0] , c1 = c + vec[1];
 
             if(r1 >= 0 && r1 < grid.size() && c1 >= 0 && c1 < grid[0].size() && grid[r1][c1] == 1){
@@ -18,7 +18,8 @@ public:
             The problem states we need to return the number of land cells from which we cannot walk off the boundary , 
             So the brute way will be to go each land cell and then try to go outwards and check if we were able to go outside the boundary
 
-            but a better way will be to think like all the land cells on the boundary can be used to walk off the boundary so they will be included in our answer and all the land cells we can reach from these boundary land cells will also be in our answer 
+            but a better way will be to think like all the land cells on the boundary can be used to walk off the boundary  and all the land cells we can reach from these boundary land cells will also be the land cells through which we can walk off the boundary , so 
+
             so just calculate the number of land cells we can reach from boundary cells
 
         */
