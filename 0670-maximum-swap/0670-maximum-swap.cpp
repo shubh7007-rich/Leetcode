@@ -7,13 +7,12 @@ public:
             bool swapp = false;
             char mini = str[i];
             int idx = -1;
-            for(int j = i + 1 ; j < str.size() ; j++){
-                if(str[j] >= mini){
+            for(int j = str.size()-1 ; j > i ; j--){
+                if(str[j] > mini){
                     idx = j;
                     mini = str[j];
                 }
             }
-            if(mini == str[i]) continue;
             if(idx != -1){
                 swap(str[i] , str[idx]);
                 swapp = true;
