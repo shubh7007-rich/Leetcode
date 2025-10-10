@@ -5,7 +5,7 @@ public:
 
     MyHashSet() {
         int n = 1e6 + 1;
-        vec.resize(n , false);
+        vec = vector<bool>(n , false);
     }
     
     void add(int key) {
