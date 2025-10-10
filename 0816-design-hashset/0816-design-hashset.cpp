@@ -1,23 +1,53 @@
 class MyHashSet {
 public:
-    
-    vector<bool> vec;
+    /*  
+        we are going to use hashing , hashing is a techinque by which we map large number of key values into a smaller space
+        Open addressing(linear probing and quadratic probing) and separate chaining
+
+        here we are going to use separate chaining , in separate chaiing we don't store just a single value in a bucket instead we store list in each bucket
+
+
+    */
+
+    int M;   // size of our container i.e vector of list
+
+    vector<list<int>> hashSet;
+
+    int getInd(int key){
+        return key % M;
+    }
 
     MyHashSet() {
-        int n = 1e6 + 1;
-        vec = vector<bool>(n , false);
+        M = 15000;
+        hashSet = vector<list<int>>(M , list<int>{});
     }
     
     void add(int key) {
-        vec[key] = true;
+        int idx = getInd(key);
+
+        auto itr = find(hashSet[idx].begin() , hashSet[idx].end() , key);
+
+        if(itr == hashSet[idx].end()){
+            hashSet[idx].push_back(key);
+        }
     }
     
     void remove(int key) {
-        vec[key] = false;
+        int idx = getInd(key);
+
+        auto itr = find(hashSet[idx].begin() , hashSet[idx].end() , key);
+
+        if(itr != hashSet[idx].end()){
+            hashSet[idx].erase(itr);
+        }
     }
     
     bool contains(int key) {
-        return vec[key];
+        int idx = getInd(key);
+
+        auto itr = find(hashSet[idx].begin() , hashSet[idx].end() , key);
+
+        return itr != hashSet[idx].end();
     }
 };
 
