@@ -1,47 +1,62 @@
 class Solution {
 public:
-    void merge(int l , int m , int h , vector<int>& nums){
-        int i = l , j = m+1;
+    void merge(int lb , int mid , int ub , vector<int>& nums){
         vector<int> temp;
-        while(i <= m && j <= h){
-            if(nums[i] <= nums[j]){
-                temp.push_back(nums[i]);
-                i++;
+
+        int l = lb , r = mid + 1;
+
+        while(l <= mid && r <= ub){
+            if(nums[l] <= nums[r]){
+                temp.push_back(nums[l]);
+                l++;
             }else{
-                temp.push_back(nums[j]);
-                j++;
+                temp.push_back(nums[r]);
+                r++;
             }
         }
-
-        while( i <= m){
-            temp.push_back(nums[i]);
-            i++;
+        while(l <= mid ){
+            temp.push_back(nums[l]);
+            l++;
         }
-        while(j <= h){
-            temp.push_back(nums[j]);
-            j++;
+        while(r <= ub){
+            temp.push_back(nums[r]);
+            r++;  
         }
 
-        for(int e = l  ; e <= h ; e++){
-            nums[e] = temp[e - l];
+        for(int k = lb ; k <= ub ; k++){
+            nums[k] = temp[k - lb];
         }
     }
-    void mergeSort(int l , int h , vector<int>& nums){
+    void mergeSort(int lb , int ub , vector<int>& nums){
+        if(lb >= ub) return;
 
-        if(l == h) return;
+        int mid = (lb + ub) / 2;
 
-        int m = (l + h)/2;
-
-        mergeSort(l , m , nums);
-        mergeSort(m+1 , h , nums);
-        merge(l , m , h , nums);
+        mergeSort(lb , mid , nums);
+        mergeSort(mid+1 , ub , nums);
+        merge(lb , mid , ub , nums);
     }
     vector<int> sortArray(vector<int>& nums) {
-        // using merge sort
+        /*
+            merge sort -->  
+                    0    1   2   3   4    5   6
+                    [1 , 2 , 3 , 4 , 5 , 6 , 7]
 
-        int l = 0 , h = nums.size() - 1;
+                    n = 7 , mid = 7/2 --> 3
 
-        mergeSort(l , h ,nums);
+                    0    1   2   3     4   5   6
+                    [1 , 3 , 5 , 7]   [2 , 4 , 6]
+
+                [3, 7]   [1 , 5]      [2 , 4]   [6]
+
+                [7] [3]   [5]  [1]   [2]    [4]   
+
+                t.c -->O(n log n)
+ 
+        */
+
+       mergeSort(0 , nums.size() - 1 , nums);
+
 
         return nums;
     }
