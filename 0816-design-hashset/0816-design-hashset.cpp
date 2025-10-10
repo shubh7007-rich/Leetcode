@@ -18,7 +18,7 @@ public:
     }
 
     MyHashSet() {
-        M = 15000;
+        M = 1000;
         hashSet = vector<list<int>>(M , list<int>{});
     }
     
