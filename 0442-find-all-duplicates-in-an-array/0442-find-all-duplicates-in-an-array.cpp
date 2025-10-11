@@ -1,31 +1,44 @@
 class Solution {
 public:
     vector<int> findDuplicates(vector<int>& nums) {
-        // each integer can appear atmost twice 
-        // [1 , n] -- so every number can form a valid index , nums[i] - 1
+        /*
+            brute force approach --> count the frequency and the push all the elements with freq > 1
 
-        // so here as numbers are from 1 to n , so i can use cyclic sort to sort the array 
-        // and the position at which nums[i] != i+1 , then nums[i] is duplicate
+             O(n) && O(n)
 
-        vector<int> duplicates;
-        int i = 0;
+            Optimal approach --> [1 , n]
 
-        while(i < nums.size()){
-            int correct = nums[i] - 1;
 
-            if(nums[i] != nums[correct]){
-                swap(nums[i] , nums[correct]);
-            }else{
-                i++;
-            }
-        }
+            vector<int> ans;
+                    [1, n]  --> size of array --> n , 3  ---> 3-1  , 1 --> 0 , n --> (n-1)
+                      0  1  2  3  4  5  6  7
+                     [-4,-3,-2,-7, 8, 2,-3,-1]
+
+                     ans = 2 , 3
+
+
+                     abs(-2) --> 2 --> 2-1 = 1
+
+
+                     t.c --> O(n) and S.c --> O(1)
+
+        */
+
+        vector<int> ans;
+
 
         for(int i = 0 ; i < nums.size() ; i++){
-            if(nums[i] != i+1){
-                duplicates.push_back(nums[i]);
+            int ind = abs(nums[i]) - 1;
+
+            if(nums[ind] < 0){
+                ans.push_back(abs(nums[i]));
+            }else{
+                nums[ind] = -nums[ind];
             }
         }
 
-        return duplicates;
+
+
+        return ans;
     }
-}; 
+};
