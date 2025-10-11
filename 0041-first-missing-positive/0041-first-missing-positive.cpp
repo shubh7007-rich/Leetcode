@@ -2,22 +2,22 @@ class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
         /*
-            sort()
+            brute force approach --> O(n log n)
+
+            better approach --> O(n) and O(n)
+
+
+
         
         */
 
-        sort(nums.begin() , nums.end());
+        unordered_set<int> st(nums.begin() , nums.end());
 
-        int p = 1;
-
-        for(int i = 0 ; i < nums.size() ; i++){
-            if(nums[i] < p) continue;
-            if(p != nums[i]){
-                return p;
-            }
-            p++;
+        for(int i = 1 ; i < 100001 ; i++){
+            if(!st.count(i)) return i;
         }
 
-        return p;
+        return 100001;
+        
     }
 };
