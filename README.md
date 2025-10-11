@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
 | [0907-koko-eating-bananas](https://github.com/shubh7007-rich/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [0917-boats-to-save-people](https://github.com/shubh7007-rich/Leetcode/tree/master/0917-boats-to-save-people) |
 | [0940-fruit-into-baskets](https://github.com/shubh7007-rich/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [0966-binary-subarrays-with-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
 | [0875-longest-mountain-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0875-longest-mountain-in-array) |
+| [0917-boats-to-save-people](https://github.com/shubh7007-rich/Leetcode/tree/master/0917-boats-to-save-people) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/shubh7007-rich/Leetcode/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shubh7007-rich/Leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1894-merge-strings-alternately](https://github.com/shubh7007-rich/Leetcode/tree/master/1894-merge-strings-alternately) |
@@ -185,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0646-maximum-length-of-pair-chain](https://github.com/shubh7007-rich/Leetcode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0692-top-k-frequent-words](https://github.com/shubh7007-rich/Leetcode/tree/master/0692-top-k-frequent-words) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
+| [0917-boats-to-save-people](https://github.com/shubh7007-rich/Leetcode/tree/master/0917-boats-to-save-people) |
 | [0948-sort-an-array](https://github.com/shubh7007-rich/Leetcode/tree/master/0948-sort-an-array) |
 | [0974-reorder-data-in-log-files](https://github.com/shubh7007-rich/Leetcode/tree/master/0974-reorder-data-in-log-files) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -553,6 +556,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shubh7007-rich/Leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0853-most-profit-assigning-work](https://github.com/shubh7007-rich/Leetcode/tree/master/0853-most-profit-assigning-work) |
+| [0917-boats-to-save-people](https://github.com/shubh7007-rich/Leetcode/tree/master/0917-boats-to-save-people) |
 | [1448-maximum-69-number](https://github.com/shubh7007-rich/Leetcode/tree/master/1448-maximum-69-number) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1917-maximum-average-pass-ratio](https://github.com/shubh7007-rich/Leetcode/tree/master/1917-maximum-average-pass-ratio) |
