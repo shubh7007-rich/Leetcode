@@ -28,9 +28,7 @@ public:
         
         for every index we need leftMax and RightMax
 
-    */
-    int trap(vector<int>& height) {
-        int n = height.size();
+        Better Approach -->
 
         vector<int> lMax(n , 0) , rMax(n , 0);
 
@@ -58,8 +56,39 @@ public:
 
         int sum = 0;
 
-        for(int & i : trappedWater) sum += i;
+        for(int i : trappedWater) sum += i;
+
+    */
+
+    int trap(vector<int>& height) {
+        int n = height.size();
+
+        int lMax = height[0] , rMax = height[n-1];
+
+        vector<int> trappedWater(n , 0);
+
+        int l = 1 , r = n-2;
+
+        while(l <= r){
+            if(lMax <= rMax){
+                trappedWater[l] = max(0 , lMax - height[l]);
+                lMax = max(lMax , height[l]);
+                l++;
+            }else{
+                trappedWater[r] = max(0 , rMax - height[r]);
+                rMax = max(rMax , height[r]);
+                r--;
+            }
+        }
+
+        int sum = 0;
+
+        for(int i : trappedWater) sum += i;
+
+        // cout << sum << endl;
 
         return sum;
+
+
     }
 };
