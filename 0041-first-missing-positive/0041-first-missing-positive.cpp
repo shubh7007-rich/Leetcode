@@ -17,18 +17,57 @@ public:
             unordered_set<int> st(nums.begin() , nums.end());
 
             for(int i = 1 ; i <= n ; i++){
-                if()
+                if(!st.count(i)) return i;
             }
 
+            return n+1;
+
             optimal approach --> O(n) and O(1)
+
+            [1 , n+1]
+
+            [3 , 4 , 1 , 5]  
+
+            [-3 , 4 , -1 , -5]  
+
+            [7 , 8 , 9 , 11 , 12]
+
+            
+            [3 , -4 , 1 , 5]  
+
+            [-3 , 1 , -1 , 1] 
+
+
+
+
+
         */
+        int n = nums.size();
 
-        unordered_set<int> st(nums.begin() , nums.end());
+        bool contains1 = false;
 
-        for(int i = 1 ; i <= nums.size() ; i++){
-            if(!st.count(i)) return i;
+        for(int i : nums){
+            if(i == 1) contains1 = true;
         }
 
-        return nums.size() + 1; 
+        if(!contains1) return 1;
+
+        for(int & i : nums){
+            if(i <= 0 || i > n) i = 1;
+        }
+
+        for(int i = 0 ; i < n ; i++){
+            int ind = abs(nums[i]) - 1;
+
+            if(nums[ind] > 0){
+                nums[ind] = -nums[ind];
+            }
+        }
+
+        for(int i = 0 ; i < n ; i++){
+            if(nums[i] > 0) return i+1;
+        }
+
+        return n+1;
     }
 };
