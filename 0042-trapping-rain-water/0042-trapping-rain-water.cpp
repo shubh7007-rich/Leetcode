@@ -58,7 +58,7 @@ public:
 
         int sum = 0;
 
-        for(int i : trappedWater) sum += i;
+        for(int & i : trappedWater) sum += i;
 
         return sum;
     }
