@@ -1,12 +1,27 @@
 class Solution {
 public:
     bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        for(int i = 0 ; i < nums.size(); i++){
-            for(int j = i+1 ; j < nums.size() && j <= i + k ; j++){
-                if(nums[i] == nums[j] ) return true;
+        unordered_map<int , int> freq;
+
+        int i = 0  , n = nums.size();
+
+        for(int j = 0 ; j < n ; j++){
+            freq[nums[j]]++;
+
+            if(j-i+1 > k+1){
+                freq[nums[i]]--;
+
+                if(freq[nums[i]] == 0){
+                    freq.erase(nums[i]);
+                }
+                i++;
             }
+
+            if(freq.size() < j-i+1) return true;
         }
 
         return false;
+
+
     }
 };
