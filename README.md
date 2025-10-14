@@ -534,6 +534,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/shubh7007-rich/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/shubh7007-rich/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1450-delete-leaves-with-a-given-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1450-delete-leaves-with-a-given-value) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/shubh7007-rich/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/shubh7007-rich/Leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
@@ -717,6 +718,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/shubh7007-rich/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1450-delete-leaves-with-a-given-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1450-delete-leaves-with-a-given-value) |
 | [1492-time-needed-to-inform-all-employees](https://github.com/shubh7007-rich/Leetcode/tree/master/1492-time-needed-to-inform-all-employees) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
@@ -893,6 +895,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/shubh7007-rich/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/shubh7007-rich/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+| [1450-delete-leaves-with-a-given-value](https://github.com/shubh7007-rich/Leetcode/tree/master/1450-delete-leaves-with-a-given-value) |
 ## Monotonic Stack
 |  |
 | ------- |
