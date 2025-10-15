@@ -11,14 +11,33 @@
  */
 class Solution {
 public:
-    TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root == NULL) return NULL;
+    TreeNode* rightt(TreeNode* root){
+        if(root->right == NULL) return root;
+
+        return rightt(root->right);
+    }
+
+    TreeNode* helper(TreeNode* root){
+        if(root->right == NULL) return root->left;
+        if(root->left == NULL) return root->right;
 
         TreeNode* dummy = root;
+
+        TreeNode* rightMost = rightt(dummy->left);
+
+        rightMost->right = dummy->right;
+
+        return dummy->left;
+
+    }
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        if(root == NULL) return NULL;
 
         if(root->val == key){
             return helper(root);
         }
+
+        TreeNode* dummy = root;
 
         while(root != NULL){
             if(root->val > key){
@@ -40,25 +59,28 @@ public:
 
         return dummy;
     }
-
-    TreeNode* helper(TreeNode* node){
-        if(node->left == NULL){
-            return node->right;
-        }
-        if(node->right == NULL){
-            return node->left;
-        }
-        TreeNode* leftNode = node->left;
-        TreeNode* rightMost = getRightMost(leftNode);
-
-        rightMost->right = node->right;
-
-        return node->left;
-    }
-
-    TreeNode* getRightMost(TreeNode* node){
-        if(node->right == NULL) return node;
-
-        return getRightMost(node->right);
-    }
 };
+
+/*
+
+                        7
+                       / \
+                      5   9
+                     / \  /\
+                    3   6 8 11
+                   / \
+                  1   4
+
+
+                        7
+                       / \
+                      3   9
+                     / \  /\
+                    1   4 8 11
+                         \
+                          6
+
+we will find that particular node , and delete it 
+                
+
+*/
