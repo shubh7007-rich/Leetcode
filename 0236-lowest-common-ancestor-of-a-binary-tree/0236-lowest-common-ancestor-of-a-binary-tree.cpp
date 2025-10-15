@@ -9,44 +9,19 @@
  */
 class Solution {
 public:
-    bool getPath(TreeNode* root, vector<TreeNode*>& path ,  TreeNode* target){
-        if(root == NULL) return false;
-
-        path.push_back(root);
-
-        if(root->val == target->val) return true;
-
-        bool left = false , right = false;
-
-      
-            right = getPath(root->right , path , target);
-        
-            left = getPath(root->left , path , target);
-        
-
-        if(left || right) return true;
-
-        path.pop_back();
-
-        return false;
-    
-    }
+    // Tree
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        vector<TreeNode*> path1 , path2;
+        if(root == NULL) return NULL;
 
-        getPath(root , path1 , p);
-        getPath(root , path2 , q);
+        if(root->val == p->val || (root->val == q->val)) return root;
 
-        TreeNode* ans = NULL;
+        TreeNode* left = lowestCommonAncestor(root->left , p , q);
+        TreeNode* right = lowestCommonAncestor(root->right , p , q);
 
-        for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
-            if(path1[i] == path2[i]){
-                ans = path1[i];
-            }else{
-                break;
-            }
-        }
+        if(left != NULL && right != NULL) return root;
 
-        return ans;
+        if(left != NULL) return left;
+
+        return right;
     }
 };
