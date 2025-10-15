@@ -14,12 +14,12 @@ public:
     TreeNode* func(TreeNode* root , int target){
         if(root == NULL) return NULL;
 
-        root->left = func(root->left , target);
-        root->right = func(root->right , target);
+	root->left = func(root->left , target);
+	root->right = func(root->right , target);
 
-        if(root->left == NULL && root->right == NULL && root->val == target) return NULL;
+	if(root->val == target && root->left == NULL && root->right == NULL) return NULL;
 
-        return root;
+	return root;
     }
     TreeNode* removeLeafNodes(TreeNode* root, int target) {
         if(root == NULL) return NULL;
@@ -44,10 +44,10 @@ public:
 
                         1      target = 2
                        /
-                      2 ------> why would we consider deleting this node before other 
-                     /          nodes
-                    2
-                     \
+                      2 
+                     /          
+                    2 ------> why would we consider deleting this node before other 
+                     \        nodes
                       3
                      /
                     2
