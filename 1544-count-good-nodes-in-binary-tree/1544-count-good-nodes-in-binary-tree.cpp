@@ -11,23 +11,26 @@
  */
 class Solution {
 public:
-    void func(TreeNode* root , int maxi , int & cnt){
-        if(root == NULL) return;
+    int func(TreeNode* root , int maxi , int & cnt){
+        if(root == NULL) return 0;
+
+        int c = 0 , total = 0;
 
         if(root->val >= maxi){
-            cnt++;
-        }
+            c = 1;
+        } 
 
         maxi = max(maxi , root->val);
 
-        func(root->left , maxi , cnt);
-        func(root->right , maxi , cnt);
+        total += c + func(root->left , maxi , cnt) + func(root->right , maxi , cnt);
+        
+        return total;
     }
     int goodNodes(TreeNode* root) {
         int cnt = 0;
 
-        func(root , INT_MIN , cnt);
+        return func(root , INT_MIN , cnt);
 
-        return cnt;
+        // return cnt;
     }
 };
