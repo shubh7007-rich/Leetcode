@@ -10,68 +10,47 @@
 
 class Solution {
 public:
-    bool getPath(TreeNode* root , TreeNode* target , vector<TreeNode*>& path){
+    bool getPath(TreeNode* root, vector<TreeNode*>& path ,  TreeNode* target){
         if(root == NULL) return false;
 
         path.push_back(root);
 
-        if(root == target) return true;
+        if(root->val == target->val) return true;
 
-        bool ans = false;
+        bool left = false , right = false;
 
-        if(root->val > target->val){
-            ans = getPath(root->left , target , path);
+        if(target->val > root->val){
+            right = getPath(root->right , path , target);
         }else{
-            ans = getPath(root->right , target , path);
+            left = getPath(root->left , path , target);
         }
 
-        if(ans) return true;
-
-        path.pop_back();
+        if(left || right) return true;
 
         return false;
-    }
-
-    TreeNode* better(TreeNode* root , TreeNode* p , TreeNode* q){
-        if(root == NULL) return NULL;
-
-        if(root == p || root == q) return root;
-
-        TreeNode* left = better(root->left , p , q);
-        TreeNode* right = better(root->right , p , q);
-
-        if(left && right) return root;
-
-        if(left == NULL) return right;
-
-        return left;
+    
     }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         /*
-            Brute Force approach --> just calculate the path from the root node to p and to q , and take the rightmost common node
-                T.C --> O(H) , S.C --> O(H)
+            naive approach --> to get the path from root the nodes p and q and just compare and return the righmost common node in both the paths
 
-            Better Approaoch --> just 
         */
 
-        // coding the brute force approach
-        // vector<TreeNode*> path1 ,path2;
+        vector<TreeNode*> path1 , path2;
 
-        // getPath(root , p , path1);
-        // getPath(root , q , path2);
+        getPath(root , path1 , p);
+        getPath(root , path2 , q);
 
-        // TreeNode* ans = NULL;
+        TreeNode* ans = NULL;
 
-        // for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
-        //     if(path1[i] == path2[i]){
-        //         ans = path1[i];
-        //     }
-        // }
+        for(int i = 0 ; i < min(path1.size() , path2.size()) ; i++){
+            if(path1[i] == path2[i]){
+                ans = path1[i];
+            }else{
+                break;
+            }
+        }
 
-        // return ans;
-
-        // coding better approach
-
-        return better(root , p , q);
+        return ans;
     }
 };
