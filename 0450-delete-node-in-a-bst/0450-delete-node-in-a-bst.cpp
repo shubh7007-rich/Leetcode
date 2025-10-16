@@ -11,27 +11,24 @@
  */
 class Solution {
 public:
-    TreeNode* rightt(TreeNode* root){
-        if(root->right == NULL) return root;
+    TreeNode* rightt(TreeNode* node){
+        if(node->right == NULL) return node;
 
-        return rightt(root->right);
+        return rightt(node->right);
     }
+    TreeNode* helper(TreeNode* node){
+        if (node->right == NULL) return node->left;
+        if (node->left == NULL) return node->right;
 
-    TreeNode* helper(TreeNode* root){
-        if(root->right == NULL) return root->left;
-        if(root->left == NULL) return root->right;
-
-        TreeNode* dummy = root;
-
-        TreeNode* rightMost = rightt(dummy->left);
-
-        rightMost->right = dummy->right;
+        TreeNode* dummy = node;
+        TreeNode* rightMost = rightt(node->left);
+        rightMost->right = node->right;
 
         return dummy->left;
 
     }
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root == NULL) return NULL;
+        if(root == NULL) return root;
 
         if(root->val == key){
             return helper(root);
@@ -60,27 +57,3 @@ public:
         return dummy;
     }
 };
-
-/*
-
-                        7
-                       / \
-                      5   9
-                     / \  /\
-                    3   6 8 11
-                   / \
-                  1   4
-
-
-                        7
-                       / \
-                      3   9
-                     / \  /\
-                    1   4 8 11
-                         \
-                          6
-
-we will find that particular node , and delete it 
-                
-
-*/
