@@ -53,11 +53,13 @@ public:
         if(!contains1) return 1;
 
         for(int & i : nums){
-            if(i <= 0 || i > n) i = 1;
+            if(i <= 0 ) i = 1;
         }
 
         for(int i = 0 ; i < n ; i++){
             int ind = abs(nums[i]) - 1;
+
+            if(ind >= n) continue;
 
             if(nums[ind] > 0){
                 nums[ind] = -nums[ind];
