@@ -131,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/shubh7007-rich/Leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/shubh7007-rich/Leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
+| [3264-maximum-points-after-enemy-battles](https://github.com/shubh7007-rich/Leetcode/tree/master/3264-maximum-points-after-enemy-battles) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
@@ -592,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2600-maximum-tastiness-of-candy-basket](https://github.com/shubh7007-rich/Leetcode/tree/master/2600-maximum-tastiness-of-candy-basket) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/shubh7007-rich/Leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/shubh7007-rich/Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
+| [3264-maximum-points-after-enemy-battles](https://github.com/shubh7007-rich/Leetcode/tree/master/3264-maximum-points-after-enemy-battles) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/shubh7007-rich/Leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shubh7007-rich/Leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
