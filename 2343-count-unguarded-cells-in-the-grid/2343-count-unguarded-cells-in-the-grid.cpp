@@ -3,7 +3,7 @@ public:
     vector<vector<int>> directions = {{1,0} , {-1,0} , {0,1} , {0,-1}};
 
     int countUnguarded(int n, int m, vector<vector<int>>& guards, vector<vector<int>>& walls) {
-        // Simple multisource bfs
+
 
         int cnt = 0;
 
