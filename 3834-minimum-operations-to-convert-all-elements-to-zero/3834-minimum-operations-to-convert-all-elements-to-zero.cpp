@@ -9,30 +9,31 @@ public:
 
         int n = nums.size() , cnt = 0;
 
-        unordered_set<int> sett;
+        // unordered_set<int> sett;
 
         for(int i = 0 ; i < n ; i++){
             if(st.empty()){
                 st.push(nums[i]);
-                sett.insert(nums[i]);
+                // sett.insert(nums[i]);
                 if(nums[i] != 0) cnt++;
             }else{
                 if(st.top() > nums[i]){
                     while(!st.empty() && st.top() > nums[i]){
-                        sett.erase(st.top());
+                        // sett.erase(st.top());
                         st.pop();
                     }
-                    if(!sett.count(nums[i])) {
+                    if(st.empty() || (st.top() < nums[i])) {
                         
                         st.push(nums[i]);
                         if(nums[i] != 0) cnt++;
-                        sett.insert(nums[i]);
+                        // sett.insert(nums[i]);
                     }
                 }else{
-                    if(!sett.count(nums[i])){
+                    if(st.empty() || (st.top() < nums[i])) {
+                        
                         st.push(nums[i]);
-                        sett.insert(nums[i]);
                         if(nums[i] != 0) cnt++;
+                        // sett.insert(nums[i]);
                     }
                 }
                 
