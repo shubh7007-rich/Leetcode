@@ -42,3 +42,10 @@ public:
         return cnt;
     }
 };
+
+struct FastIOS {
+    FastIOS() {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
+    }
+} fastio;
