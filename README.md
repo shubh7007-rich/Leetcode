@@ -118,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shubh7007-rich/Leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2023-design-movie-rental-system](https://github.com/shubh7007-rich/Leetcode/tree/master/2023-design-movie-rental-system) |
 | [2096-find-the-longest-valid-obstacle-course-at-each-position](https://github.com/shubh7007-rich/Leetcode/tree/master/2096-find-the-longest-valid-obstacle-course-at-each-position) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/shubh7007-rich/Leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shubh7007-rich/Leetcode/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/shubh7007-rich/Leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2307-replace-non-coprime-numbers-in-array) |
@@ -266,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/shubh7007-rich/Leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/shubh7007-rich/Leetcode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shubh7007-rich/Leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/shubh7007-rich/Leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/shubh7007-rich/Leetcode/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/shubh7007-rich/Leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/shubh7007-rich/Leetcode/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
@@ -292,6 +294,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1448-maximum-69-number](https://github.com/shubh7007-rich/Leetcode/tree/master/1448-maximum-69-number) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/shubh7007-rich/Leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/shubh7007-rich/Leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/shubh7007-rich/Leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/shubh7007-rich/Leetcode/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2288-count-operations-to-obtain-zero](https://github.com/shubh7007-rich/Leetcode/tree/master/2288-count-operations-to-obtain-zero) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/shubh7007-rich/Leetcode/tree/master/2307-replace-non-coprime-numbers-in-array) |
